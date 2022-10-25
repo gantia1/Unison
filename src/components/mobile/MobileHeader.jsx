@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import headerImg from '../../img/unisonLogo.svg';
 import toggle from '../../img/toggle.svg';
-import {Modal} from "react-bootstrap";
+import {Modal, Offcanvas} from "react-bootstrap";
 import uniLogo from "../../img/uniLogo.svg";
 import close from "../../img/close.svg";
 import toggleIcon from "../../img/toggleIcon.png";
@@ -11,11 +11,18 @@ import agent from "../../img/agent.png";
 import phone1 from "../../img/phone1.svg";
 import './mobile.scss';
 import closeWhite from '../../img/closeWhite.svg';
+import home1 from "../../img/home1.svg";
+import health1 from '../../img/healt1.svg';
+import car1 from '../../img/car1.svg';
+import person1 from '../../img/person1.svg';
+import flight1 from '../../img/flight1.svg';
 
 
 function MobileHeader() {
     const [show, setShow] = useState(false);
     const [showSos, setShowSos] = useState(false);
+    const [showSideMenu, setShowSideMenu] = useState(false);
+
 
     return (
 
@@ -28,18 +35,17 @@ function MobileHeader() {
                 </div>
             </div>
 
-            <Modal show={show} fullscreen={"xxl-down"} onHide={() => setShow(false)}>
-                <Modal.Body>
-                    <div className='toggle1 '>
-                        <div className="toggle-header">
-                            <div className="toggle-title">
-                                <div style={{height: "100px"}}>
-                                    <img className='toggle-logo' src={uniLogo} alt="uniLogo"/>
-                                    <img className='toggle-close' src={close} alt="close"
-                                         onClick={() => setShow(false)}/>
-                                </div>
-                            </div>
-                        </div>
+            <Offcanvas className='toggle-header-offcanvas' placement='end' show={show}>
+                <Offcanvas.Header>
+                    <Offcanvas.Title>
+                        <img className='toggle-logo' src={uniLogo} alt="uniLogo"/>
+                        <img className='toggle-close' src={close} alt="close"
+                             onClick={() => setShow(false)}/>
+                    </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    <div className='toggle1'>
+
                         <div className="toggle-body">
                             <div className="myCabinet-nav">
                                 <a href="#">
@@ -62,7 +68,7 @@ function MobileHeader() {
                             </div>
 
                             <div className="mobile-toggle-list">
-                                <div>
+                                <div onClick={() => setShowSideMenu(true)}>
                                     <li className="mobile-toggle-list-item" style={{marginTop: "67px"}}>
                                         <img src={toggleIcon} alt=""/> ფიზიკური პირებისთვის
                                         <div className='toggle-arrow'>
@@ -132,18 +138,20 @@ function MobileHeader() {
                                 <ul>
                                     <li>ცხელი ხაზი</li>
                                     <li>
-                                        <a href='#'> <img src={phone1} alt="phone1"/> 2 991 991</a>
+                                        <a href="tel:0322991991"> <img src={phone1} alt="phone1"/> 2 991 991</a>
                                     </li>
                                 </ul>
                             </div>
 
                         </div>
                     </div>
-                </Modal.Body>
-            </Modal>
+                </Offcanvas.Body>
+            </Offcanvas>
+
 
             {/*modal sos*/}
-            <Modal backdrop={true} size="sm" show={showSos} onHide={() => setShowSos(false)} aria-labelledby="contained-modal-title-vcenter"
+            <Modal backdrop={true} size="sm" show={showSos} onHide={() => setShowSos(false)}
+                   aria-labelledby="contained-modal-title-vcenter"
                    centered>
 
                 <div className="sos-modal">
@@ -163,6 +171,44 @@ function MobileHeader() {
                     </div>
                 </div>
             </Modal>
+
+            {/*side menu*/}
+
+            <Offcanvas className='side-menu' placement='end' show={showSideMenu} backdrop="static">
+                <Offcanvas.Header>
+                    <img className='side-menu-close'  src={close} alt="close" onClick={() => setShowSideMenu(false)}/>
+                </Offcanvas.Header>
+                <Offcanvas.Body className='side-menu-body'>
+                    <div className="side-menu-text">
+
+                        <div className='side-menu-list'>
+                            <img src={home1} alt="home1"/>
+                            ქონების დაზღვევა
+                        </div>
+
+                        <div className='side-menu-list'>
+                            <img src={health1} alt="health1"/>
+                            ინდივიდუალური ჯანმრთელობის დაზღვევა
+                        </div>
+
+                        <div className='side-menu-list'>
+                            <img src={car1} alt="car1"/>
+                            ავტოდაზღვევა - პაკეტები
+                        </div>
+
+                        <div className='side-menu-list'>
+                            <img src={person1} alt="person1"/>
+                            მძღოლის პასუხისმგებლობის დაზღვევა
+                        </div>
+                        <div className='side-menu-list'>
+                            <img src={flight1} alt="flight1"/>
+                            სამოგზაურო დაზღვევა
+                        </div>
+
+
+                    </div>
+                </Offcanvas.Body>
+            </Offcanvas>
         </>
     );
 }

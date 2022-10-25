@@ -27,15 +27,15 @@ function Index() {
             <div className="dropdown-lang" style={{marginRight:'5%'}}>
                 <ul>
 
-                    <li className='choose-lang'><a><img className='lang-img' src={ka}/> ქართული<img className='lang-img img-arrow' src={arrow}/></a>
+                    <li className='choose-lang'><a><img className='lang-img' src={ka} alt='lang-img'/> ქართული<img className='lang-img img-arrow' src={arrow} alt='arrow'/></a>
                         <div className='lang'>
 
                             <div className='lang-a'>
-                                <a href='#'> <img className='lang-img' src={en}/> English </a>
+                                <a href='#'> <img className='lang-img' src={en} alt='lang-img'/> English </a>
                             </div>
 
                             <div className='lang-a'>
-                                <a href='#'><img className='lang-img' src={ru}/> Русский</a>
+                                <a href='#'><img className='lang-img' src={ru} alt='lang-img'/> Русский</a>
                             </div>
 
                         </div>
@@ -43,7 +43,7 @@ function Index() {
 
                     <li>
                         <div className='phone-border'>
-                            <div className='phone'>ცხელი ხაზი <img src={phone}/> 2 911 911</div>
+                            <div className='phone'><a href="tel:0322991991">ცხელი ხაზი <img src={phone} alt='phone'/> 2 911 911</a></div>
                         </div>
                     </li>
 

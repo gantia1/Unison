@@ -25,9 +25,6 @@ a {
   text-decoration: none !important;
 }
 
-img, svg {
-  vertical-align: baseline !important;
-}
 
 //header
 
@@ -239,7 +236,8 @@ img, svg {
 }
 
 .menu-dropdown {
-  display: none;
+  //display: none;
+  visibility: hidden;
   width: 615px;
   height: 303px;
   flex-direction: column;
@@ -253,13 +251,16 @@ img, svg {
 }
 
 .menu-list:hover .menu-dropdown {
-  display: flex;
+  visibility: inherit;
 }
 
-.menu-dropdown div {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.menu-dropdown div:hover svg #Path_29{
+  fill:#fff;
 }
+//.menu-dropdown div {
+//  padding-top: 10px;
+//  padding-bottom: 10px;
+//}
 
 .menu-dropdown div:hover {
   background-color: #EE303C;
@@ -275,10 +276,10 @@ img, svg {
   margin-left: 55px;
 }
 
-.menu-dropdown img {
+.menu-dropdown svg {
+  width: 20px;
+  vertical-align: middle!important;
   margin-right: 33px;
-  width: 16px;
-  height: 20px;
 }
 
 .menu-dropdown > :first-child {
@@ -372,7 +373,7 @@ img, svg {
 
 .card:hover {
   background-color: #006A9F;
-  height: 250px;
+  height: 240px;
   transform: translateY(-8%);
 
   .card-body {
@@ -511,7 +512,6 @@ img, svg {
   overflow-x: scroll;
   overflow-y: hidden;
   -ms-overflow-style: none;
-  scrollbar-width: none;
   @extend %container;
 }
 
@@ -652,9 +652,9 @@ img, svg {
 
 //responsive
 
-@media (max-width: 1186px) {
+@media (max-width: 1200px) {
   .maxWidth-header {
-    font-size: 10.5px;
+    font-size: 10px;
   }
   .dropdown-content {
     font-size: 13px;
@@ -701,9 +701,9 @@ img, svg {
 .slider-container {
   width: 100%;
   height: 100%;
-  position: fixed; /* add this code for position fixed */
-  top: 0px; /* set top and left 0 */
-  left: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .slider-item-div {
@@ -754,13 +754,14 @@ img, svg {
   }
   .card {
     width: calc(50% - 6px);
-    height: 113px;
+    height: 180px;
   }
 
   .card:hover {
     background-color: #FFFFFF;
     height: 145px;
     transform: translateY(0%);
+    transition: 0.3s;
 
     .card-body {
       color: #707070 !important;
@@ -843,8 +844,11 @@ img, svg {
   .sm-text {
     font-size: 10px;
   }
+  .news-card {
+    border: 0 solid transparent;
+  }
   .news-card:hover {
-    border: 2px solid transparent;
+    border: 0 solid transparent;
   }
   .all-news {
     transform: translateY(-25px);
