@@ -1,37 +1,3 @@
-.agent {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  cursor: pointer;
-}
-
-.agent img {
-  width: 30.13px;
-  height: 30.13px;
-  margin-top: 23.08px;
-}
-
-.connect-agent {
-  background-color: #EE303C;
-  color: #FFFFFF;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  font-size: 15px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  width: 154px;
-  height: 121px;
-  margin-top: 165px;
-  text-align: center;
-  transition: all 0.3s ease-in;
-}
-
-.connect-agent:hover {
-  width: 165px;
-  transition: all 0.3s ease-in;
-}
-
 .carousel-caption {
   bottom: -4.75rem !important;
 }
@@ -114,9 +80,7 @@
   .carousel-item > :first-child {
     height: 266px;
   }
-  .agent {
-    display: none;
-  }
+
 
   .carousel-caption {
     bottom: 0 !important;

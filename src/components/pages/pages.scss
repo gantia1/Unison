@@ -1,0 +1,73 @@
+.about-us {
+  background: url('../../img/aboutUsBg1.svg') no-repeat, url('../../img/aboutUsBg2.svg') repeat-x;
+  background-position: 100% 0, 0 50%;
+
+  height: 2000px;
+}
+
+%about-us-gradient {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #006a9f);
+  opacity: 1;
+  height: 232px;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+}
+
+.about-us-top {
+  align-items: end;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url("../../img/aboutUsTop.png");
+  background-size: cover;
+  border-bottom: 4px solid #ee303c;
+  height: 352px;
+  width: 100%;
+
+
+  .about-us-gradient-top {
+    @extend %about-us-gradient;
+    rotate: 180deg;
+    top: 49px;
+  }
+
+  .about-us-gradient-bottom {
+    @extend %about-us-gradient;
+    bottom: 0;
+    left: 0;
+    top: 165px;
+  }
+
+  .about-us-top-text {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 75%;
+    z-index: 3;
+    font-size: 48px;
+  }
+}
+
+.about-us-description {
+  color: #707070;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 70px 30px 74px;
+  text-align: center;
+}
+
+.about-us-history {
+  text-align: center;
+  font-size: 32px;
+  color: #006A9F;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+}
+
+//test!!!!!!!
+
+.menu {
+  background-color: transparent;
+  z-index: 5;
+  position: absolute;
+}

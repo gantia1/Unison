@@ -7,13 +7,11 @@ import agent from "../../img/agent.png";
 import buyOnline from "../../img/buyOnline.png";
 
 
-
-
 function Slider() {
     return (
         <>
             <Carousel>
-                <Carousel.Item >
+                <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={slide}
@@ -52,12 +50,6 @@ function Slider() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <div className="agent">
-                <div className='connect-agent'>
-                    <div><img src={agent} alt="agent"/></div>
-                    აგენტთან დაკავშირება
-                </div>
-            </div>
         </>
     );
 }

@@ -3,16 +3,18 @@ import en from '../../img/en.png';
 import ru from '../../img/ru.png';
 import arrow from '../../img/arrow.svg';
 import phone from '../../img/phone.svg';
+import {Link} from "react-router-dom";
+import agent from "../../img/agent.png";
 
 function Index() {
-    return (
 
+    return (
         <div className="header">
 
             <div className='maxWidth-header'>
                 <ul>
-                    <li><a className='nav-item' href="#">მთავარი</a></li>
-                    <li><a className='nav-item' href="#">ჩვენს შესახებ</a></li>
+                    <li><Link to="/" className='nav-item'>მთავარი</Link></li>
+                    <li><Link to="/about-us" className='nav-item'>ჩვენს შესახებ</Link></li>
                     <li><a className='nav-item' href="#">სიახლეები</a></li>
                     <li><a className='nav-item' href="#">პარტნიორები</a></li>
                     <li><a className='nav-item' href="#">კონტაქტი</a></li>
@@ -24,34 +26,42 @@ function Index() {
                     </li>
                 </ul>
 
-            <div className="dropdown-lang" style={{marginRight:'5%'}}>
-                <ul>
+                <div className="dropdown-lang" style={{marginRight: '5%'}}>
+                    <ul>
 
-                    <li className='choose-lang'><a><img className='lang-img' src={ka} alt='lang-img'/> ქართული<img className='lang-img img-arrow' src={arrow} alt='arrow'/></a>
-                        <div className='lang'>
+                        <li className='choose-lang'><a><img className='lang-img' src={ka} alt='lang-img'/> ქართული<img
+                            className='lang-img img-arrow' src={arrow} alt='arrow'/></a>
+                            <div className='lang'>
 
-                            <div className='lang-a'>
-                                <a href='#'> <img className='lang-img' src={en} alt='lang-img'/> English </a>
+                                <div className='lang-a'>
+                                    <a href='#'> <img className='lang-img' src={en} alt='lang-img'/> English </a>
+                                </div>
+
+                                <div className='lang-a'>
+                                    <a href='#'><img className='lang-img' src={ru} alt='lang-img'/> Русский</a>
+                                </div>
+
                             </div>
+                        </li>
 
-                            <div className='lang-a'>
-                                <a href='#'><img className='lang-img' src={ru} alt='lang-img'/> Русский</a>
+                        <li>
+                            <div className='phone-border'>
+                                <div className='phone'><a href="tel:0322991991">ცხელი ხაზი <img src={phone}
+                                                                                                alt='phone'/> 2 911 911</a>
+                                </div>
                             </div>
+                        </li>
 
-                        </div>
-                    </li>
+                    </ul>
 
-                    <li>
-                        <div className='phone-border'>
-                            <div className='phone'><a href="tel:0322991991">ცხელი ხაზი <img src={phone} alt='phone'/> 2 911 911</a></div>
-                        </div>
-                    </li>
-
-                </ul>
-
+                </div>
             </div>
+            <div className="agent">
+                <div className='connect-agent'>
+                    <div><img src={agent} alt="agent"/></div>
+                    აგენტთან დაკავშირება
+                </div>
             </div>
-
         </div>
 
     );

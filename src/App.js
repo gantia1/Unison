@@ -1,39 +1,29 @@
 import './App.css';
-import Index from "./components/header";
-import Menu from "./components/menu/Menu";
-import Home from "./components/home/Home";
-import Footer from "./components/footer/Footer";
-import Slider from "./components/slide/Slider";
-import {createMedia} from "@artsy/fresnel"
-import MobileFooter from "./components/mobile/MobileFooter";
-import MobileHeader from "./components/mobile/MobileHeader";
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Layout from "./components/layout/Layout";
+import HomePage from "./components/home/HomePage";
+import AboutUs from "./components/pages/AboutUs";
 
-const {MediaContextProvider, Media} = createMedia({
-    breakpoints: {
-        sm: 0,
-        lg: 1001,
-    },
-})
 
 function App() {
+
     return (
-        <MediaContextProvider>
-            <Media at='sm'>
-                <MobileHeader/>
-            </Media>
-            <Media at='lg'>
-                <Index/>
-            </Media>
-            <Menu/>
-            <Slider/>
-            <Home/>
-            <Media at='sm'>
-                <MobileFooter/>
-            </Media>
-            <Media at='lg'>
-                <Footer/>
-            </Media>
-        </MediaContextProvider>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route path='' element={
+                        <HomePage/>
+                    }/>
+                    <Route
+                        path='/about-us'
+                        element=
+                            {<AboutUs/>}
+                    />
+
+
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

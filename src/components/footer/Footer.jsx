@@ -4,6 +4,7 @@ import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
 import linkedin from '../../img/linkedin.png';
 import youtube from '../../img/youtube.png';
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -12,7 +13,7 @@ function Footer() {
                 <div className="footer-list">
                     <ul>
                         <li className='footer-list-item'><img className='footer-logo' src={unisonLogo} alt="logo"/></li>
-                        <li className='footer-list-item'><a href="#">ჩვენს შესახებ</a></li>
+                        <li className='footer-list-item'><Link to="/about-us" >ჩვენს შესახებ</Link></li>
                         <li className='footer-list-item'><a href="#">კარიერა</a></li>
                         <li className='footer-list-item'><a href="#">პარტნიორები</a></li>
                     </ul>

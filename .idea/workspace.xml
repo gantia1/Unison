@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/unison.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/unison.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mobile/mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,8 @@
       <workItem from="1666363764225" duration="317000" />
       <workItem from="1666592587315" duration="1602000" />
       <workItem from="1666594400109" duration="14908000" />
-      <workItem from="1666678939332" duration="20493000" />
+      <workItem from="1666678939332" duration="23815000" />
+      <workItem from="1666765233280" duration="23750000" />
     </task>
     <servers />
   </component>
