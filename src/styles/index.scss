@@ -47,14 +47,14 @@ a {
   width: 100%;
 }
 
-.header ul, .menu ul {
+.header ul, .menu ul, .about-us-menu ul {
   list-style-type: none;
   margin-top: 0;
   display: flex;
   flex-direction: row;
 }
 
-.header li, .menu li {
+.header li, .menu li, .about-us-menu li  {
   margin: 17px 0 13px 30px;
 }
 
@@ -248,9 +248,21 @@ a {
 
 .menu {
   background-color: #006a9f;
+  position: inherit;
   width: 100%;
   align-items: center;
   display: flex;
+  z-index: 5;
+  flex-direction: column;
+}
+
+.about-us-menu {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  z-index: 5;
   flex-direction: column;
 }
 
@@ -282,7 +294,6 @@ a {
   flex-direction: column;
   background-color: white;
   border-radius: 8px !important;
-  margin-top: 3px;
   transform: translateX(-33px);
   position: absolute;
   cursor: pointer;

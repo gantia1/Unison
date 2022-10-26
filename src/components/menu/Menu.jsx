@@ -3,10 +3,13 @@ import health from '../../img/health.svg';
 import car from '../../img/car.svg';
 import person from '../../img/person.svg';
 import flight from '../../img/flight.svg';
+import {useLocation} from "react-router-dom";
 
 function Menu() {
+    const location = useLocation();
+
     return (
-        <div className='menu'>
+        <div className={location.pathname === "/about-us"?'about-us-menu':'menu'}>
             <div className="maxWidth-menu">
                 <ul>
                     <li>

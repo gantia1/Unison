@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/pages.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +32,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lenovo/WebstormProjects/unison/src/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/George/Desktop/Unison&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
@@ -97,6 +92,10 @@
       <workItem from="1666594400109" duration="14908000" />
       <workItem from="1666678939332" duration="23815000" />
       <workItem from="1666765233280" duration="23750000" />
+      <workItem from="1666801817724" duration="361000" />
+      <workItem from="1666802194595" duration="597000" />
+      <workItem from="1666802813537" duration="14000" />
+      <workItem from="1666802838986" duration="3213000" />
     </task>
     <servers />
   </component>
