@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import unisonLogo from '../../img/unisonLogo.svg';
 import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
@@ -7,13 +7,18 @@ import youtube from '../../img/youtube.png';
 import {Link} from "react-router-dom";
 
 function Footer() {
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
     return (
         <div className='footer'>
             <div className="footer-container">
                 <div className="footer-list">
                     <ul>
                         <li className='footer-list-item'><img className='footer-logo' src={unisonLogo} alt="logo"/></li>
-                        <li className='footer-list-item'><Link to="/about-us" >ჩვენს შესახებ</Link></li>
+                        <li className='footer-list-item'><Link to="/about-us"    onClick={() => {
+                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                        }}>ჩვენს შესახებ</Link></li>
                         <li className='footer-list-item'><a href="#">კარიერა</a></li>
                         <li className='footer-list-item'><a href="#">პარტნიორები</a></li>
                     </ul>

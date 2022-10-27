@@ -43,7 +43,7 @@ a {
   font-size: 14.4px;
   height: 49px;
   justify-content: space-between;
-  max-width: 1920px;
+  max-width: 1364px;
   width: 100%;
 }
 
@@ -271,7 +271,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1920px;
+  max-width: 1364px;
   width: 100%;
 }
 
@@ -293,13 +293,13 @@ a {
   height: 303px;
   flex-direction: column;
   background-color: white;
-  border-radius: 8px !important;
+  border-radius: 8px;
   transform: translateX(-33px);
   position: absolute;
   cursor: pointer;
-  z-index: 100 !important;
+  z-index: 10;
   filter: drop-shadow(0 10px 40px #006A9F1A);
-
+  box-shadow: 0 10px 40px #006A9F1A;
 }
 
 .menu-list:hover .menu-dropdown {
@@ -382,7 +382,7 @@ a {
   gap: 12px;
   grid-template-rows: 180px;
   margin: -32px auto 76px;
-  max-width: 1920px;
+  max-width: 1364px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -483,7 +483,7 @@ a {
   gap: 12px;
   grid-template-rows: 180px;
   margin: -32px auto 76px;
-  max-width: 1920px;
+  max-width: 1364px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -646,7 +646,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 1920px;
+  max-width: 1364px;
   padding: 32px 0 0;
 }
 
