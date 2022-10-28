@@ -8,10 +8,11 @@ import MobileFooter from "../mobile/MobileFooter";
 import Menu from "../menu/Menu";
 
 function Layout() {
+
     const {MediaContextProvider, Media} = createMedia({
         breakpoints: {
             sm: 0,
-            lg: 1001,
+            lg: 1025,
         },
     })
     return (

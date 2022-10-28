@@ -5,6 +5,7 @@ import instagram from '../../img/instagram.png';
 import linkedin from '../../img/linkedin.png';
 import youtube from '../../img/youtube.png';
 import './mobile.scss';
+import {Link} from "react-router-dom";
 
 function MobileFooter() {
     return (
@@ -13,7 +14,7 @@ function MobileFooter() {
                 <div className="mobile-footer-list-text"><img
                     src={unisonLogo} alt="logo" width="151px"/></div>
                 <ul className="mobile-footer-list">
-                    <li><a href="#">ჩვენ შესახებ</a></li>
+                    <li><Link to="/about-us">ჩვენს შესახებ</Link></li>
                     <li><a href="#">კარიერა</a></li>
                     <li><a href="#">პარტნიორები</a></li>
                 </ul>

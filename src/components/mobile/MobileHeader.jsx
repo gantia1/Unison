@@ -16,6 +16,7 @@ import health1 from '../../img/healt1.svg';
 import car1 from '../../img/car1.svg';
 import person1 from '../../img/person1.svg';
 import flight1 from '../../img/flight1.svg';
+import {Link} from "react-router-dom";
 
 
 function MobileHeader() {
@@ -116,7 +117,7 @@ function MobileHeader() {
                         </div>
                         <div className="mobile-toggle-middle-list">
                             <ul>
-                                <li><a href="#">ჩვენ შესახებ</a></li>
+                                <li><Link to="/about-us" onClick={() => setShow(false)}>ჩვენს შესახებ</Link></li>
                                 <li><a href="#">პარტნიორები</a></li>
                             </ul>
                             <ul>
@@ -176,7 +177,7 @@ function MobileHeader() {
 
             <Offcanvas className='side-menu' placement='end' show={showSideMenu} backdrop="static">
                 <Offcanvas.Header>
-                    <img className='side-menu-close'  src={close} alt="close" onClick={() => setShowSideMenu(false)}/>
+                    <img className='side-menu-close' src={close} alt="close" onClick={() => setShowSideMenu(false)}/>
                 </Offcanvas.Header>
                 <Offcanvas.Body className='side-menu-body'>
                     <div className="side-menu-text">

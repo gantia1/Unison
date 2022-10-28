@@ -4,6 +4,11 @@
   font-family: "Helvetica Neue LT GEO", sans-serif;
 }
 
+.about-us-menu {
+  display: none;
+  padding: 0 100px !important;
+}
+
 //menu gradient img
 
 %about-us-gradient {
@@ -58,11 +63,36 @@
   text-align: center;
 }
 
-.about-us-h1 {
+%about-us-h1-text {
   text-align: center;
   font-size: 32px;
   color: #006A9F;
   font-family: "BPG LE Studio 02 Caps", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: auto auto 30px;
+  max-width: 1364px;
+  position: relative;
+}
+
+.about-us-h1 {
+  @extend %about-us-h1-text;
+}
+
+.about-us-h {
+  @extend %about-us-h1-text;
+}
+
+.card-arrow-left {
+  position: absolute;
+  right: 65px;
+  cursor: pointer;
+}
+
+.card-arrow-right {
+  position: absolute;
+  right: 35px;
+  cursor: pointer;
 }
 
 //top card
@@ -286,5 +316,170 @@
       width: 22px;
     }
   }
+}
 
+@media (max-width: 1024px) {
+  //about us
+  .about-us-menu {
+    display: contents;
+  }
+  .about-us-top {
+    display: none;
+  }
+  .about-us-bottom-cards {
+    display: none;
+  }
+  .about-us-description {
+    display: none;
+  }
+  .about-us-h {
+    display: none;
+  }
+  .about-us-h1 {
+    margin-top: 26px;
+
+    h1 {
+      font-size: 24px !important;
+    }
+
+    .card-arrow-left {
+      margin-top: 20px;
+    }
+
+    .card-arrow-right {
+      margin-top: 20px;
+    }
+  }
+
+  .about-us-top-cards {
+    padding: 0 40px;
+
+    .about-us-top-card-description {
+      font-size: 14px;
+      left: -9px;
+      padding: 22px;
+      top: -252px;
+      width: 229px;
+    }
+
+    .about-us-card-history {
+    }
+
+    .year {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .year-dot {
+
+    }
+
+    .dotted-line {
+
+    }
+
+    .about-us-top-card-image {
+      top: 23px;
+
+      img {
+        width: 255px;
+        height: 247px;
+      }
+    }
+  }
+
+  .annual {
+    margin-top: 0;
+
+    .annual-title {
+      font-size: 24px;
+      white-space: nowrap;
+    }
+
+    .annual-files {
+      flex-direction: column;
+
+      .annual-file {
+        border-radius: 0;
+        box-shadow: none;
+        filter: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h3 {
+          font-size: 14px;
+        }
+
+        h4 {
+          font-size: 14px;
+          margin: 0 10px;
+        }
+
+        span {
+          display: none;
+        }
+
+        .annual-download:hover {
+          color: #fff;
+          background-color: #F2F2F2;
+          cursor: pointer;
+
+          svg {
+            fill: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+//accordion
+
+.accordion-item {
+  background-color: #fff;
+  border-radius: 12px !important;
+  display: block;
+  filter: drop-shadow(0 5pt 16pt #006A9F1A);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  transition: height .3s ease-out;
+  border: 1px solid #006A9F !important;
+
+  button {
+    box-shadow: none;
+    background-color: #fff;
+    color: #006A9F;
+    font-size: 24px;
+    border: none;
+  }
+
+  .accordion-body {
+    border: none;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #fff;
+    box-shadow: none;
+    color: #006a9f;
+
+  }
+
+  .accordion-button::after {
+    color: #006A9F !important;
+    border: 2px solid #006a9f;
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23006a9f'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+
+  }
 }
