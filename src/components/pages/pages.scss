@@ -4,7 +4,7 @@
   font-family: "Helvetica Neue LT GEO", sans-serif;
 }
 
-.about-us-menu {
+.mobile-about-us-menu {
   display: none;
   padding: 0 100px !important;
 }
@@ -320,7 +320,7 @@
 
 @media (max-width: 1024px) {
   //about us
-  .about-us-menu {
+  .mobile-about-us-menu {
     display: contents;
   }
   .about-us-top {

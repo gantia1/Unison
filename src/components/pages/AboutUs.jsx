@@ -22,7 +22,7 @@ function AboutUs() {
     };
     return (
         <>
-            <div className='about-us-menu'>
+            <div className='mobile-about-us-menu'>
                 <Container className='mb-5'>
                     <Accordion>
 
