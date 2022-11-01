@@ -9,7 +9,7 @@ function Menu() {
     const location = useLocation();
 
     return (
-        <div className={location.pathname === "/about-us"?'about-us-menu':'menu'}>
+        <div className={location.pathname === "/" ? 'menu' : 'about-us-menu'}>
             <div className="maxWidth-menu">
                 <ul>
                     <li>

@@ -27,6 +27,22 @@ ul {
   height: 80px;
 }
 
+//contact header
+
+.mobile-header-contact {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 4;
+.mobile-header-img svg path{
+  fill: #FFFFFF;
+}
+  .toggle {
+    top: 25px;
+  }
+}
+
 .mobile-header-img img {
   width: 180px;
   height: 80px;
@@ -65,7 +81,7 @@ ul {
 }
 
 .mobile-footer-img {
-  margin-right: 15px;
+  margin: 0 15px 5px 0;
   width: 20px;
   vertical-align: middle !important;
 }

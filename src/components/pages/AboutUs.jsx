@@ -23,7 +23,7 @@ function AboutUs() {
     return (
         <>
             <div className='mobile-about-us-menu'>
-                <Container className='mb-5'>
+                <Container className='my-4'>
                     <Accordion>
 
                         <Accordion.Item eventKey="0">

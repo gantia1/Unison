@@ -8,17 +8,21 @@ import {Link} from "react-router-dom";
 
 function Footer() {
     useEffect(() => {
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        scrollTop();
     }, []);
+
+    function scrollTop() {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }
+
     return (
         <div className='footer'>
             <div className="footer-container">
                 <div className="footer-list">
                     <ul>
                         <li className='footer-list-item'><img className='footer-logo' src={unisonLogo} alt="logo"/></li>
-                        <li className='footer-list-item'><Link to="/about-us"    onClick={() => {
-                            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-                        }}>ჩვენს შესახებ</Link></li>
+                        <li className='footer-list-item'><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link>
+                        </li>
                         <li className='footer-list-item'><a href="#">კარიერა</a></li>
                         <li className='footer-list-item'><a href="#">პარტნიორები</a></li>
                     </ul>
@@ -33,17 +37,21 @@ function Footer() {
                     </ul>
                     <ul>
                         <li className='footer-list-item'><strong>დახმარება</strong></li>
-                        <li className='footer-list-item'><a href="#">კონტაქტი</a></li>
+                        <li className='footer-list-item'><Link to='/contact' onClick={scrollTop}>კონტაქტი</Link></li>
                         <li className='footer-list-item'><a href="#">მომხმარებლის ხმა</a></li>
                         <li className='footer-list-item'><a href="#">ხშირად დასმული კითხვები</a></li>
                         <li className='footer-list-item'><a href="#">მონაცემთა დაცვა</a></li>
                     </ul>
                     <ul>
                         <li className='footer-list-item'><strong>სოციალური ქსელები</strong></li>
-                        <li className='footer-list-item'><a href='#'><img className='footer-img' src={facebook} alt="facebook"/> Facebook</a></li>
-                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={instagram} alt="instagram"/> Instagram</a></li>
-                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={linkedin} alt="linkedin"/> Linkedin</a></li>
-                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={youtube} alt="youtube"/> Youtube</a></li>
+                        <li className='footer-list-item'><a href='#'><img className='footer-img' src={facebook}
+                                                                          alt="facebook"/> Facebook</a></li>
+                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={instagram}
+                                                                          alt="instagram"/> Instagram</a></li>
+                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={linkedin}
+                                                                          alt="linkedin"/> Linkedin</a></li>
+                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={youtube}
+                                                                          alt="youtube"/> Youtube</a></li>
                     </ul>
 
                 </div>

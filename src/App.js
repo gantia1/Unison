@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Layout from "./components/layout/Layout";
 import HomePage from "./components/home/HomePage";
 import AboutUs from "./components/pages/AboutUs";
+import Contact from "./components/pages/Contact";
 
 
 function App() {
@@ -16,9 +17,11 @@ function App() {
                     }/>
                     <Route
                         path='/about-us'
-                        element=
+                        element={<AboutUs/>}
+                    />
 
-                            {<AboutUs/>}
+                    <Route path='/contact'
+                           element={<Contact/>}
                     />
                 </Route>
             </Routes>

@@ -16,22 +16,27 @@ import health1 from '../../img/healt1.svg';
 import car1 from '../../img/car1.svg';
 import person1 from '../../img/person1.svg';
 import flight1 from '../../img/flight1.svg';
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
+import Logo from '../../img/Logo.svg';
 
 
 function MobileHeader() {
     const [show, setShow] = useState(false);
     const [showSos, setShowSos] = useState(false);
     const [showSideMenu, setShowSideMenu] = useState(false);
-
+    const location = useLocation();
 
     return (
 
         <>
             <div>
-                <div className="mobile-header-gradient"></div>
-                <div className="mobile-header">
-                    <div className="mobile-header-img"><img src={headerImg} alt="mobile-img"/></div>
+                <div className={location.pathname === "/contact" ? '' : 'mobile-header-gradient'}></div>
+                <div className={location.pathname === "/contact" ? 'mobile-header-contact' : 'mobile-header'}>
+                    <div className="mobile-header-img">
+                        <img className='header-img'
+                             src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
+                             alt="mobile-img"/>
+                    </div>
                     <div className='toggle' onClick={() => setShow(true)}><img src={toggle} alt="toggle"/></div>
                 </div>
             </div>
@@ -122,7 +127,7 @@ function MobileHeader() {
                             </ul>
                             <ul>
                                 <li><a href="#">სიახლეები</a></li>
-                                <li><a href="#">კონტაქტი</a></li>
+                                <li><Link to="/contact" onClick={() => setShow(false)}>კონტაქტი</Link></li>
                             </ul>
                         </div>
                         <div className="mobile-toggle-bottom-list">
