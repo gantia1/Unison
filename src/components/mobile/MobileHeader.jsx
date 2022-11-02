@@ -1,9 +1,8 @@
 import React, {useState} from "react";
-import headerImg from '../../img/unisonLogo.svg';
 import toggle from '../../img/toggle.svg';
 import {Modal, Offcanvas} from "react-bootstrap";
-import uniLogo from "../../img/uniLogo.svg";
-import close from "../../img/close.svg";
+import {ReactComponent as UnisonLogo} from "../../img/uniLogo.svg";
+import {ReactComponent as Close} from "../../img/close.svg";
 import toggleIcon from "../../img/toggleIcon.png";
 import toggleIcon1 from "../../img/toggleIcon1.svg";
 import toggleIcon2 from "../../img/toggleIcon2.svg";
@@ -12,12 +11,11 @@ import phone1 from "../../img/phone1.svg";
 import './mobile.scss';
 import closeWhite from '../../img/closeWhite.svg';
 import home1 from "../../img/home1.svg";
-import health1 from '../../img/healt1.svg';
+import health1 from '../../img/health1.svg';
 import car1 from '../../img/car1.svg';
 import person1 from '../../img/person1.svg';
 import flight1 from '../../img/flight1.svg';
 import {Link, useLocation} from "react-router-dom";
-import Logo from '../../img/Logo.svg';
 
 
 function MobileHeader() {
@@ -33,9 +31,11 @@ function MobileHeader() {
                 <div className={location.pathname === "/contact" ? '' : 'mobile-header-gradient'}></div>
                 <div className={location.pathname === "/contact" ? 'mobile-header-contact' : 'mobile-header'}>
                     <div className="mobile-header-img">
-                        <img className='header-img'
-                             src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
-                             alt="mobile-img"/>
+                        <Link to="/">
+                            <img className='header-img'
+                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
+                                 alt="mobile-img"/>
+                        </Link>
                     </div>
                     <div className='toggle' onClick={() => setShow(true)}><img src={toggle} alt="toggle"/></div>
                 </div>
@@ -44,9 +44,8 @@ function MobileHeader() {
             <Offcanvas className='toggle-header-offcanvas' placement='end' show={show}>
                 <Offcanvas.Header>
                     <Offcanvas.Title>
-                        <img className='toggle-logo' src={uniLogo} alt="uniLogo"/>
-                        <img className='toggle-close' src={close} alt="close"
-                             onClick={() => setShow(false)}/>
+                        <div className="toggle-logo"><UnisonLogo/></div>
+                        <div className="toggle-close" onClick={() => setShow(false)}><Close/></div>
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
@@ -82,7 +81,7 @@ function MobileHeader() {
                                                  height="20.986" viewBox="0 0 20.986 20.986">
                                                 <path id="Path_398" data-name="Path 398" d="M13.339,0V13.339H0"
                                                       transform="translate(10.493) rotate(45)"
-                                                      fill="none" stroke="#EE303C" stroke-width="3"/>
+                                                      fill="none" stroke="#EE303C" strokeWidth="3"/>
                                             </svg>
                                         </div>
                                     </li>
@@ -95,7 +94,7 @@ function MobileHeader() {
                                                  height="20.986" viewBox="0 0 20.986 20.986">
                                                 <path id="Path_398" data-name="Path 398" d="M13.339,0V13.339H0"
                                                       transform="translate(10.493) rotate(45)"
-                                                      fill="none" stroke="#EE303C" stroke-width="3"/>
+                                                      fill="none" stroke="#EE303C" strokeWidth="3"/>
                                             </svg>
                                         </div>
                                     </li>
@@ -103,15 +102,14 @@ function MobileHeader() {
                             </div>
                             <div>
                                 <li className="mobile-toggle-list-item">
-                                    <img src={toggleIcon2} alt=""
-                                         style={{width: "16px", height: "20px"}}/> სავალდებულო
-                                    დაზღვევა
+                                    <img src={toggleIcon2} alt="" style={{width: "16px", height: "20px"}}/>
+                                    სავალდებულო დაზღვევა
                                     <div className='toggle-arrow'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                              height="20.986" viewBox="0 0 20.986 20.986">
                                             <path id="Path_398" data-name="Path 398" d="M13.339,0V13.339H0"
                                                   transform="translate(10.493) rotate(45)"
-                                                  fill="none" stroke="#EE303C" stroke-width="3"/>
+                                                  fill="none" stroke="#EE303C" strokeWidth="3"/>
                                         </svg>
                                     </div>
                                 </li>
@@ -182,7 +180,7 @@ function MobileHeader() {
 
             <Offcanvas className='side-menu' placement='end' show={showSideMenu} backdrop="static">
                 <Offcanvas.Header>
-                    <img className='side-menu-close' src={close} alt="close" onClick={() => setShowSideMenu(false)}/>
+                     <div className="side-menu-close" onClick={() => setShowSideMenu(false)}><Close/></div>
                 </Offcanvas.Header>
                 <Offcanvas.Body className='side-menu-body'>
                     <div className="side-menu-text">

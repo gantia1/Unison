@@ -130,13 +130,13 @@ ul {
   padding-right: 23px;
 }
 
-.toggle-logo {
+.toggle-logo svg {
   position: absolute;
-  top: 40px;
+  //top: 40px;
   left: 65px;
 }
 
-.toggle-close {
+.toggle-close svg{
   position: absolute;
   top: 50px;
   right: 65px;
@@ -179,7 +179,7 @@ ul {
   cursor: pointer;
 }
 
-.mobile-toggle-list-item svg {
+.toggle-arrow svg {
   rotate: -90deg;
   vertical-align: middle !important;
 }
@@ -271,9 +271,7 @@ ul {
 }
 
 //sos modal
-
 .sos-modal-content {
-  background-color: #ee303c;
   border: none;
   border-radius: 12px;
   color: #fff;
@@ -314,6 +312,7 @@ ul {
 
 .modal-content {
   border: none;
+  background-color: #ee303c!important;
   border-radius: 13px;
 }
 

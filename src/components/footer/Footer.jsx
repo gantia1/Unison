@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import unisonLogo from '../../img/unisonLogo.svg';
+import {ReactComponent as FooterLogo} from "../../img/unisonLogo.svg";
 import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
 import linkedin from '../../img/linkedin.png';
@@ -20,7 +20,9 @@ function Footer() {
             <div className="footer-container">
                 <div className="footer-list">
                     <ul>
-                        <li className='footer-list-item'><img className='footer-logo' src={unisonLogo} alt="logo"/></li>
+                        <li className='footer-list-item footer-logo'>
+                            <Link to="/" onClick={scrollTop}><FooterLogo/></Link>
+                        </li>
                         <li className='footer-list-item'><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link>
                         </li>
                         <li className='footer-list-item'><a href="#">კარიერა</a></li>

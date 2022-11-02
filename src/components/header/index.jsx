@@ -1,4 +1,4 @@
-import ka from '../../img/ka.svg';
+import {ReactComponent as Georgian} from "../../img/ka.svg";
 import en from '../../img/en.png';
 import ru from '../../img/ru.png';
 import arrow from '../../img/arrow.svg';
@@ -15,8 +15,8 @@ function Index() {
                 <ul>
                     <li><Link to="/" className='nav-item'>მთავარი</Link></li>
                     <li><Link to="/about-us" className='nav-item'>ჩვენს შესახებ</Link></li>
-                    <li><a className='nav-item' href="#">სიახლეები</a></li>
-                    <li><a className='nav-item' href="#">პარტნიორები</a></li>
+                    <li><a href="#" className='nav-item'>სიახლეები</a></li>
+                    <li><a href="#" className='nav-item'>პარტნიორები</a></li>
                     <li><Link to="/contact" className='nav-item'>კონტაქტი</Link></li>
                     <li className='dropdown'> SOS
                         <div className="dropdown-content">
@@ -29,8 +29,11 @@ function Index() {
                 <div className="dropdown-lang" style={{marginRight: '5%'}}>
                     <ul>
 
-                        <li className='choose-lang'><a><img className='lang-img' src={ka} alt='lang-img'/> ქართული<img
-                            className='lang-img img-arrow' src={arrow} alt='arrow'/></a>
+                        <li className='choose-lang'>
+                            <a href="#">
+                                <Georgian/><span>ქართული</span>
+                                <img className='lang-img img-arrow' src={arrow} alt='arrow'/>
+                            </a>
                             <div className='lang'>
 
                                 <div className='lang-a'>

@@ -54,7 +54,7 @@ a {
   flex-direction: row;
 }
 
-.header li, .menu li, .about-us-menu li  {
+.header li, .menu li, .about-us-menu li {
   margin: 17px 0 13px 30px;
 }
 
@@ -127,7 +127,11 @@ a {
   cursor: pointer;
 }
 
-.menu-logo {
+.choose-lang svg {
+  margin-right: 5px;
+}
+
+.menu-logo svg {
   width: 260px;
   height: 55px;
   margin-top: 33px;
@@ -306,8 +310,8 @@ a {
   visibility: inherit;
 }
 
-.menu-dropdown div:hover svg #Path_29{
-  fill:#fff;
+.menu-dropdown div:hover svg path {
+  fill: #fff;
 }
 
 .menu-dropdown div:hover {
@@ -326,7 +330,7 @@ a {
 
 .menu-dropdown svg {
   width: 20px;
-  vertical-align: middle!important;
+  vertical-align: middle !important;
   margin-right: 33px;
 }
 
@@ -687,7 +691,7 @@ a {
   text-decoration: underline !important;
 }
 
-.footer-logo {
+.footer-logo svg {
   width: 202px;
   height: 43.39px;
 }
@@ -728,7 +732,7 @@ a {
   .menu li {
     margin: 17px 0 13px 15px;
   }
-  .menu-logo {
+  .menu-logo svg {
     width: 230px;
   }
   .cabinet-img img {

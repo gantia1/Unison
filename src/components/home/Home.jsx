@@ -153,7 +153,7 @@ function Home() {
                          height="20.986" viewBox="0 0 20.986 20.986">
                         <path id="Path_398" data-name="Path 398" d="M13.339,0V13.339H0"
                               transform="translate(10.493) rotate(45)"
-                              fill="none" stroke="#707070" stroke-width="3"/>
+                              fill="none" stroke="#707070" strokeWidth="3"/>
                     </svg>
                 </span>
             </div>
