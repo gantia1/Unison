@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import HomePage from "./components/home/HomePage";
 import AboutUs from "./components/pages/AboutUs";
 import Contact from "./components/pages/Contact";
+import News from "./components/pages/News";
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
 
                     <Route path='/contact'
                            element={<Contact/>}
+                    />
+
+                    <Route path='/news'
+                           element={<News/>}
                     />
                 </Route>
             </Routes>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import home from '../../img/home.svg';
 import health from '../../img/health.svg';
 import car from '../../img/car.svg';
@@ -13,50 +13,58 @@ import awesome from '../../img/awesome.png';
 import home1 from '../../img/home1.png';
 import food from '../../img/food.png';
 import car1 from '../../img/car1.png';
+import {Link} from "react-router-dom";
 
 function Home() {
+    useEffect(() => {
+        scrollTop();
+    }, []);
+
+    function scrollTop() {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }
     return (
         <div className='home-container'>
 
-            <div className='card-container'>
+            <div className='home-card-container'>
 
-                <div className="card">
-                    <div className="card-body">
+                <div className="home-card">
+                    <div className="home-card-body">
                         <img src={home} alt="home"/>
                         <p>ქონების დაზღვევა</p>
-                        <button className='card-btn'>შეძენა</button>
+                        <button className='home-card-btn'>შეძენა</button>
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="card-body">
+                <div className="home-card">
+                    <div className="home-card-body">
                         <img src={health} alt="health"/>
                         <p>ჯანმრთელობის დაზღვევა</p>
-                        <button className='card-btn'>შეძენა</button>
+                        <button className='home-card-btn'>შეძენა</button>
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="card-body">
+                <div className="home-card">
+                    <div className="home-card-body">
                         <img src={car} alt="car"/>
                         <p>ავტომობილის დაზღვევა</p>
-                        <button className='card-btn'>შეძენა</button>
+                        <button className='home-card-btn'>შეძენა</button>
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="card-body">
+                <div className="home-card">
+                    <div className="home-card-body">
                         <img src={person} alt="person"/>
                         <p>პასუხისმგებლობის დაზღვევა</p>
-                        <button className='card-btn'>შეძენა</button>
+                        <button className='home-card-btn'>შეძენა</button>
                     </div>
                 </div>
 
-                <div className="card">
-                    <div className="card-body">
+                <div className="home-card">
+                    <div className="home-card-body">
                         <img src={flight} alt="flight"/>
                         <p>სამოგზაურო დაზღვევა</p>
-                        <button className='card-btn'>შეძენა</button>
+                        <button className='home-card-btn'>შეძენა</button>
                     </div>
                 </div>
 
@@ -148,7 +156,8 @@ function Home() {
 
             </div>
             <div className="all-news">
-                <span> ყველა სიახლე
+                <Link to="/news" onClick={scrollTop}>
+                    <span> ყველა სიახლე
                     <svg xmlns="http://www.w3.org/2000/svg" width="20.986"
                          height="20.986" viewBox="0 0 20.986 20.986">
                         <path id="Path_398" data-name="Path 398" d="M13.339,0V13.339H0"
@@ -156,6 +165,7 @@ function Home() {
                               fill="none" stroke="#707070" strokeWidth="3"/>
                     </svg>
                 </span>
+                </Link>
             </div>
         </div>
     );

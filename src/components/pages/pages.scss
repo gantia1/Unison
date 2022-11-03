@@ -335,7 +335,9 @@
 }
 
 @media (max-width: 1024px) {
+
   //about us
+
   .mobile-about-us-menu {
     display: contents;
   }
@@ -379,20 +381,9 @@
       width: 229px;
     }
 
-    .about-us-card-history {
-    }
-
     .year {
       font-size: 20px;
       margin-bottom: 8px;
-    }
-
-    .year-dot {
-
-    }
-
-    .dotted-line {
-
     }
 
     .about-us-top-card-image {
@@ -453,6 +444,7 @@
     }
   }
 }
+
 
 //accordion
 
@@ -793,3 +785,4 @@ input[type=number] {
   background-image: none;
   border-color: #ced4da;
 }
+

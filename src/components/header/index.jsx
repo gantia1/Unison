@@ -15,7 +15,7 @@ function Index() {
                 <ul>
                     <li><Link to="/" className='nav-item'>მთავარი</Link></li>
                     <li><Link to="/about-us" className='nav-item'>ჩვენს შესახებ</Link></li>
-                    <li><a href="#" className='nav-item'>სიახლეები</a></li>
+                    <li><Link to="/news" className='nav-item'>სიახლეები</Link></li>
                     <li><a href="#" className='nav-item'>პარტნიორები</a></li>
                     <li><Link to="/contact" className='nav-item'>კონტაქტი</Link></li>
                     <li className='dropdown'> SOS

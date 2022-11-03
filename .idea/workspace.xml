@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="contact">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mobile/mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/mobile.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/component.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/component.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/healt1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/pages.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +99,8 @@
       <workItem from="1666937935119" duration="25043000" />
       <workItem from="1667197446347" duration="23640000" />
       <workItem from="1667283584798" duration="25853000" />
-      <workItem from="1667369693012" duration="4454000" />
+      <workItem from="1667369693012" duration="26297000" />
+      <workItem from="1667456615884" duration="25027000" />
     </task>
     <task id="LOCAL-00001" summary="contact">
       <created>1667299868101</created>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667299868101</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="contact">
+      <created>1667374436133</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667374436133</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

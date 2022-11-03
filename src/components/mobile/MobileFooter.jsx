@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import unisonLogo from '../../img/unisonLogo.svg';
 import facebook from '../../img/facebook.png';
 import instagram from '../../img/instagram.png';
@@ -8,26 +8,37 @@ import './mobile.scss';
 import {Link} from "react-router-dom";
 
 function MobileFooter() {
+    useEffect(() => {
+        scrollTop();
+    }, []);
+
+    function scrollTop() {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }
+
     return (
         <div className='mobile-footer'>
             <div className="mobile-footer-container">
-                <div className="mobile-footer-list-text"><img
-                    src={unisonLogo} alt="logo" width="151px"/></div>
+                <div className="mobile-footer-list-text">
+                    <Link to="/" onClick={scrollTop}>
+                        <img src={unisonLogo} alt="logo" width="151px"/>
+                    </Link>
+                </div>
                 <ul className="mobile-footer-list">
-                    <li><Link to="/about-us">ჩვენს შესახებ</Link></li>
+                    <li><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link></li>
                     <li><a href="#">კარიერა</a></li>
                     <li><a href="#">პარტნიორები</a></li>
                 </ul>
                 <div className="mobile-footer-list-text">ინფორმაცია</div>
                 <ul className="mobile-footer-list">
-                    <li><a href="#">სიახლეები</a></li>
+                    <li><Link to="/news" onClick={scrollTop}>სიახლეები</Link></li>
                     <li><a href="#">ხელშეკრულებები</a></li>
                     <li><a href="#">საინფორმაციო ფურცელი</a></li>
                     <li><a href="#">სამედიცინო პროვაიდერები</a></li>
                 </ul>
                 <div className="mobile-footer-list-text">დახმარება</div>
                 <ul className="mobile-footer-list">
-                    <li><a href="#">კონტაქტი</a></li>
+                    <li><Link to="/contact" onClick={scrollTop}>კონტაქტი</Link></li>
                     <li><a href="#">მონაცემთა დაცვა</a></li>
                     <li><a href="#">მომხმარებლის ხმა</a></li>
                     <li><a href="#">ხშირად დასმული კითხვები</a></li>

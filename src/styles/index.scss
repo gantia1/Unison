@@ -391,13 +391,13 @@ a {
   padding-right: 16px;
 }
 
-.card-container {
+.home-card-container {
   grid-template-columns: repeat(5, 1fr);
   cursor: pointer;
   @extend %container;
 }
 
-.card {
+.home-card {
   transition: 0.3s;
   word-wrap: break-word;
   background-clip: border-box;
@@ -412,32 +412,32 @@ a {
   z-index: 100;
 }
 
-.card p {
+.home-card p {
   font-size: 18px;
   text-align: center;
   font-family: 'BPG LE Studio 02 Caps', sans-serif;
 }
 
-.card img {
+.home-card img {
   width: 45px;
   height: 45px;
 }
 
-.card:hover {
+.home-card:hover {
   background-color: #006A9F;
-  height: 240px;
+  height: 250px;
   transform: translateY(-8%);
 
-  .card-body {
+  .home-card-body {
     color: #fff !important;
   }
 }
 
-.card:hover img {
+.home-card:hover img {
   filter: brightness(0) invert(1);
 }
 
-.card-btn {
+.home-card-btn {
   display: none;
   background-color: #e3342f;
   line-height: 1.6;
@@ -453,15 +453,15 @@ a {
   cursor: pointer;
 }
 
-.card:hover .card-btn {
+.home-card:hover .home-card-btn {
   display: inline;
 }
 
-.card-btn:hover {
+.home-card-btn:hover {
   background-color: #e7524e;
 }
 
-.card-body {
+.home-card-body {
   align-items: center;
   color: #707070 !important;
   display: flex;
@@ -745,7 +745,7 @@ a {
   .menu-dropdown {
     width: 480px;
   }
-  .card p {
+  .home-card p {
     font-size: 15px;
   }
 }
@@ -793,7 +793,7 @@ a {
   .home-container {
     background-color: #F2F2F2;
   }
-  .card-container {
+  .home-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -801,30 +801,30 @@ a {
     max-width: 390px;
     padding: 0 27px;
   }
-  .card p {
+  .home-card p {
     font-size: 10px;
   }
-  .card {
+  .home-card {
     width: calc(50% - 6px);
-    height: 180px;
+    height: 150px;
   }
 
-  .card:hover {
+  .home-card:hover {
     background-color: #FFFFFF;
-    height: 145px;
+    height: 150px;
     transform: translateY(0%);
     transition: 0.3s;
 
-    .card-body {
+    .home-card-body {
       color: #707070 !important;
     }
   }
 
-  .card:hover img {
+  .home-card:hover img {
     filter: brightness(1) invert(0);
   }
 
-  .card:hover .card-btn {
+  .home-card:hover .home-card-btn {
     display: none;
   }
   .mobile-sos {

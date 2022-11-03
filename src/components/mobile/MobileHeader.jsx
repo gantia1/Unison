@@ -28,12 +28,14 @@ function MobileHeader() {
 
         <>
             <div>
-                <div className={location.pathname === "/contact" ? '' : 'mobile-header-gradient'}></div>
-                <div className={location.pathname === "/contact" ? 'mobile-header-contact' : 'mobile-header'}>
+                <div
+                    className={location.pathname === "/contact" ? '' : location.pathname === "/news" ? '' : 'mobile-header-gradient'}></div>
+                <div
+                    className={location.pathname === "/contact" ? 'mobile-header-contact' : location.pathname === "/news" ? 'mobile-header-contact' : 'mobile-header'}>
                     <div className="mobile-header-img">
                         <Link to="/">
                             <img className='header-img'
-                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
+                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
                                  alt="mobile-img"/>
                         </Link>
                     </div>
@@ -124,7 +126,7 @@ function MobileHeader() {
                                 <li><a href="#">პარტნიორები</a></li>
                             </ul>
                             <ul>
-                                <li><a href="#">სიახლეები</a></li>
+                                <li><Link to="/news" onClick={() => setShow(false)}>სიახლეები</Link></li>
                                 <li><Link to="/contact" onClick={() => setShow(false)}>კონტაქტი</Link></li>
                             </ul>
                         </div>
@@ -180,7 +182,7 @@ function MobileHeader() {
 
             <Offcanvas className='side-menu' placement='end' show={showSideMenu} backdrop="static">
                 <Offcanvas.Header>
-                     <div className="side-menu-close" onClick={() => setShowSideMenu(false)}><Close/></div>
+                    <div className="side-menu-close" onClick={() => setShowSideMenu(false)}><Close/></div>
                 </Offcanvas.Header>
                 <Offcanvas.Body className='side-menu-body'>
                     <div className="side-menu-text">
