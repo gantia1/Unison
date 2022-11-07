@@ -16,6 +16,7 @@ import car1 from '../../img/car1.svg';
 import person1 from '../../img/person1.svg';
 import flight1 from '../../img/flight1.svg';
 import {Link, useLocation} from "react-router-dom";
+import {ReactComponent as backArrow} from "../../img/arrow.svg";
 
 
 function MobileHeader() {
@@ -40,6 +41,13 @@ function MobileHeader() {
         }
     }
 
+    function addBackButton() {
+        if (location.pathname === "/news/1") {
+            return "back-to-news";
+        } else {
+            return "back-to-news-disabled";
+        }
+    }
 
     return (
 
@@ -47,9 +55,23 @@ function MobileHeader() {
             <div>
                 <div
                     className={removeHeaderGradient()}></div>
-                <div
-                    className={addHeader()}>
+                <div className={addHeader()}>
+                    <div>
+                        <div className={addBackButton()}>
+                            <Link to="/news">
+                                <svg id="arrow_back_black_24dp" xmlns="http://www.w3.org/2000/svg" width="32"
+                                     height="32"
+                                     viewBox="0 0 32 32">
+                                    <path id="Path_282" data-name="Path 282" d="M0,0H32V32H0Z" fill="none"/>
+                                    <path id="Path_283" data-name="Path 283"
+                                          d="M28,14.5H9.745L18.13,6.115,16,4,4,16,16,28l2.115-2.115L9.745,17.5H28Z"
+                                          fill="#fff"/>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
                     <div className="mobile-header-img">
+
                         <Link to="/">
                             <img className='header-img'
                                  src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news/1" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
