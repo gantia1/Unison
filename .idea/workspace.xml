@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="contact">
+    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="News">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +95,10 @@
       <workItem from="1667197446347" duration="23640000" />
       <workItem from="1667283584798" duration="25853000" />
       <workItem from="1667369693012" duration="26297000" />
-      <workItem from="1667456615884" duration="25027000" />
+      <workItem from="1667456615884" duration="25222000" />
+      <workItem from="1667487414331" duration="23000" />
+      <workItem from="1667543074145" duration="24309000" />
+      <workItem from="1667801812548" duration="7598000" />
     </task>
     <task id="LOCAL-00001" summary="contact">
       <created>1667299868101</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667374436133</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="News">
+      <created>1667487227500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667487227501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact" />
+    <MESSAGE value="News" />
+    <option name="LAST_COMMIT_MESSAGE" value="News" />
   </component>
 </project>

@@ -24,18 +24,35 @@ function MobileHeader() {
     const [showSideMenu, setShowSideMenu] = useState(false);
     const location = useLocation();
 
+    function removeHeaderGradient() {
+        if (location.pathname === "/contact" || location.pathname === "/news" || location.pathname === "/news/1") {
+            return " ";
+        } else {
+            return "mobile-header-gradient";
+        }
+    }
+
+    function addHeader() {
+        if (location.pathname === "/contact" || location.pathname === "/news" || location.pathname === "/news/1") {
+            return "mobile-header-contact";
+        } else {
+            return "mobile-header";
+        }
+    }
+
+
     return (
 
         <>
             <div>
                 <div
-                    className={location.pathname === "/contact" ? '' : location.pathname === "/news" ? '' : 'mobile-header-gradient'}></div>
+                    className={removeHeaderGradient()}></div>
                 <div
-                    className={location.pathname === "/contact" ? 'mobile-header-contact' : location.pathname === "/news" ? 'mobile-header-contact' : 'mobile-header'}>
+                    className={addHeader()}>
                     <div className="mobile-header-img">
                         <Link to="/">
                             <img className='header-img'
-                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
+                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news/1" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
                                  alt="mobile-img"/>
                         </Link>
                     </div>

@@ -5,6 +5,7 @@ import HomePage from "./components/home/HomePage";
 import AboutUs from "./components/pages/AboutUs";
 import Contact from "./components/pages/Contact";
 import News from "./components/pages/News";
+import NewsDetail from "./components/pages/NewsDetail";
 
 
 function App() {
@@ -28,7 +29,11 @@ function App() {
                     <Route path='/news'
                            element={<News/>}
                     />
+                    <Route path='/news/:dateId'
+                           element={<NewsDetail/>}
+                    />
                 </Route>
+
             </Routes>
         </BrowserRouter>
     );
