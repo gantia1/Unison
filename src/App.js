@@ -6,6 +6,7 @@ import AboutUs from "./components/pages/AboutUs";
 import Contact from "./components/pages/Contact";
 import News from "./components/pages/News";
 import NewsDetail from "./components/pages/NewsDetail";
+import Partners from "./components/pages/Partners";
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
                     />
                     <Route path='/news/:dateId'
                            element={<NewsDetail/>}
+                    />
+                    <Route path='/partners'
+                           element={<Partners/>}
                     />
                 </Route>
 

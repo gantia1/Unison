@@ -26,12 +26,12 @@ function Footer() {
                         <li className='footer-list-item'><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link>
                         </li>
                         <li className='footer-list-item'><a href="#">კარიერა</a></li>
-                        <li className='footer-list-item'><a href="#">პარტნიორები</a></li>
+                        <li className='footer-list-item'><Link to="/partners" onClick={scrollTop}>პარტნიორები</Link></li>
                     </ul>
                     <ul>
 
                         <li className='footer-list-item'><strong>ინფორმაცია</strong></li>
-                        <li className='footer-list-item'><a href="#">სიახლეები</a></li>
+                        <li className='footer-list-item'><Link to="/news" onClick={scrollTop}>სიახლეები</Link></li>
                         <li className='footer-list-item'><a href="#">საინფორმაციო ფურცელი</a></li>
                         <li className='footer-list-item'><a href="#">სამედიცინო პროვაიდერები</a></li>
                         <li className='footer-list-item'><a href="#">ხელშეკრულებები</a></li>

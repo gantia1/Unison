@@ -23,6 +23,7 @@ function Home() {
     function scrollTop() {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
     }
+
     return (
         <div className='home-container'>
 
@@ -131,27 +132,33 @@ function Home() {
             <div className='news-container'>
 
                 <div className="news-card">
-                    <div className="news-body">
-                        <img src={home1} alt="home1"/>
-                        <div className='lg-text'>ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი</div>
-                        <div className='sm-text'>6 ნოემბერი</div>
-                    </div>
+                    <Link to={"/news/1"} onClick={scrollTop}>
+                        <div className="news-body">
+                            <img src={home1} alt="home1"/>
+                            <div className='lg-text'>ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი</div>
+                            <div className='sm-text'>6 ნოემბერი</div>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className="news-card">
-                    <div className="news-body">
-                        <img src={food} alt="food"/>
-                        <div className='lg-text'>ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან</div>
-                        <div className='sm-text'>28 ოქტომბერი</div>
-                    </div>
+                    <Link to={"/news/1"} onClick={scrollTop}>
+                        <div className="news-body">
+                            <img src={food} alt="food"/>
+                            <div className='lg-text'>ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან</div>
+                            <div className='sm-text'>28 ოქტომბერი</div>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className="news-card">
-                    <div className="news-body">
-                        <img src={car1} alt="car1"/>
-                        <div className='lg-text'>ავტომობილის სალონის მოვლის თანამედროვე ხერხები</div>
-                        <div className='sm-text'>14 ოქტომბერი</div>
-                    </div>
+                    <Link to={"/news/1"} onClick={scrollTop}>
+                        <div className="news-body">
+                            <img src={car1} alt="car1"/>
+                            <div className='lg-text'>ავტომობილის სალონის მოვლის თანამედროვე ხერხები</div>
+                            <div className='sm-text'>14 ოქტომბერი</div>
+                        </div>
+                    </Link>
                 </div>
 
             </div>

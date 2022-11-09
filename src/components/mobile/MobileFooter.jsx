@@ -27,7 +27,7 @@ function MobileFooter() {
                 <ul className="mobile-footer-list">
                     <li><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link></li>
                     <li><a href="#">კარიერა</a></li>
-                    <li><a href="#">პარტნიორები</a></li>
+                    <li><Link to="/partners" onClick={scrollTop}>პარტნიორები</Link></li>
                 </ul>
                 <div className="mobile-footer-list-text">ინფორმაცია</div>
                 <ul className="mobile-footer-list">

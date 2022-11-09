@@ -26,7 +26,7 @@ function MobileHeader() {
     const location = useLocation();
 
     function removeHeaderGradient() {
-        if (location.pathname === "/contact" || location.pathname === "/news" || location.pathname === "/news/1") {
+        if (location.pathname === "/contact" || location.pathname === "/news" || location.pathname === "/news/1" || location.pathname === "/partners") {
             return " ";
         } else {
             return "mobile-header-gradient";
@@ -34,7 +34,7 @@ function MobileHeader() {
     }
 
     function addHeader() {
-        if (location.pathname === "/contact" || location.pathname === "/news" || location.pathname === "/news/1") {
+        if (location.pathname === "/contact" || location.pathname === "/news" || location.pathname === "/news/1" || location.pathname === "/partners") {
             return "mobile-header-contact";
         } else {
             return "mobile-header";
@@ -74,7 +74,7 @@ function MobileHeader() {
 
                         <Link to="/">
                             <img className='header-img'
-                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news/1" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
+                                 src={location.pathname === "/contact" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/news/1" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : location.pathname === "/partners" ? "/static/media/Logo.4da6a64797e0640a78e09adb1aff6ee1.svg" : "/static/media/unisonLogo.67e6ca38c569dc486c43deaec1c5ba4e.svg"}
                                  alt="mobile-img"/>
                         </Link>
                     </div>
@@ -162,7 +162,7 @@ function MobileHeader() {
                         <div className="mobile-toggle-middle-list">
                             <ul>
                                 <li><Link to="/about-us" onClick={() => setShow(false)}>ჩვენს შესახებ</Link></li>
-                                <li><a href="#">პარტნიორები</a></li>
+                                <li><Link to="/partners" onClick={() => setShow(false)}>პარტნიორები</Link></li>
                             </ul>
                             <ul>
                                 <li><Link to="/news" onClick={() => setShow(false)}>სიახლეები</Link></li>
