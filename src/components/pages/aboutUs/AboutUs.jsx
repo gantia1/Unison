@@ -1,17 +1,17 @@
 import React, {useRef} from 'react';
-import './pages.scss';
-import aboutUsCard1 from '../../img/aboutUsCard1.png';
-import aboutUsCard2 from '../../img/aboutUsCard2.png';
-import aboutUsCard3 from '../../img/aboutUsCard3.png';
-import aboutUsCard4 from '../../img/aboutUsCard4.png';
-import aboutUsCard5 from '../../img/aboutUsCard5.png';
-import aboutUsCard6 from '../../img/aboutUsCard6.png';
-import aboutUsCard7 from '../../img/aboutUsCard7.png';
-import aboutUsCard8 from '../../img/aboutUsCard8.png';
-import mission from '../../img/mission.png';
-import standart from '../../img/standart.png';
-import value from '../../img/value.png';
-import annual from '../../img/annual.png';
+import '../../../styles/pages.scss';
+import aboutUsCard1 from '../../../img/aboutUsCard1.png';
+import aboutUsCard2 from '../../../img/aboutUsCard2.png';
+import aboutUsCard3 from '../../../img/aboutUsCard3.png';
+import aboutUsCard4 from '../../../img/aboutUsCard4.png';
+import aboutUsCard5 from '../../../img/aboutUsCard5.png';
+import aboutUsCard6 from '../../../img/aboutUsCard6.png';
+import aboutUsCard7 from '../../../img/aboutUsCard7.png';
+import aboutUsCard8 from '../../../img/aboutUsCard8.png';
+import mission from '../../../img/mission.png';
+import standart from '../../../img/standart.png';
+import value from '../../../img/value.png';
+import annual from '../../../img/annual.png';
 import {Accordion, Container, Form} from "react-bootstrap";
 
 function AboutUs() {

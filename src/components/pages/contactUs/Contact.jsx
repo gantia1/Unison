@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './pages.scss';
+import '../../../styles/pages.scss';
 import {Button, Form} from "react-bootstrap";
 import ContactOffCanvas from "./ContactOffCanvas";
 

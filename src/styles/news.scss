@@ -39,13 +39,13 @@
 }
 
 .news-menu {
-  background-image: url("../../img/newsTopBG.png");
+  background-image: url("../img/newsTopBG.png");
   height: 150px;
   background-size: cover;
 }
 
 .news-detail-menu {
-  background-image: url("../../img/newsTopBG.png");
+  background-image: url("../img/newsTopBG.png");
   height: 150px;
   background-size: cover;
 }
@@ -276,7 +276,7 @@
     }
   }
   .news-menu {
-    background-image: url("../../img/newsTopMobileBG.png");
+    background-image: url("../img/newsTopMobileBG.png");
     height: 185px;
   }
 
@@ -322,7 +322,7 @@
 
   //news detail mobile
   .news-detail-menu {
-    background-image: url("../../img/newsTopMobileBG.png");
+    background-image: url("../img/newsTopMobileBG.png");
     height: 114px;
     display: flex;
   }

@@ -36,7 +36,7 @@
 //}
 
 .partners-header {
-  background-image: url("../../img/partnersHeaderBG.png");
+  background-image: url("../img/partnersHeaderBG.png");
   height: 352px;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@
   }
 
   .partners-cards {
-    background-image: url("../../img/background.png");
+    background-image: url("../img/background.png");
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
