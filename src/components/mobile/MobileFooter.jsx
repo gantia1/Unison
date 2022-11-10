@@ -26,35 +26,35 @@ function MobileFooter() {
                 </div>
                 <ul className="mobile-footer-list">
                     <li><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link></li>
-                    <li><a href="#">კარიერა</a></li>
+                    <li><Link to="#">კარიერა</Link></li>
                     <li><Link to="/partners" onClick={scrollTop}>პარტნიორები</Link></li>
                 </ul>
                 <div className="mobile-footer-list-text">ინფორმაცია</div>
                 <ul className="mobile-footer-list">
                     <li><Link to="/news" onClick={scrollTop}>სიახლეები</Link></li>
-                    <li><a href="#">ხელშეკრულებები</a></li>
-                    <li><a href="#">საინფორმაციო ფურცელი</a></li>
-                    <li><a href="#">სამედიცინო პროვაიდერები</a></li>
+                    <li><Link to="#">ხელშეკრულებები</Link></li>
+                    <li><Link to="#">საინფორმაციო ფურცელი</Link></li>
+                    <li><Link to="#">სამედიცინო პროვაიდერები</Link></li>
                 </ul>
                 <div className="mobile-footer-list-text">დახმარება</div>
                 <ul className="mobile-footer-list">
                     <li><Link to="/contact" onClick={scrollTop}>კონტაქტი</Link></li>
-                    <li><a href="#">მონაცემთა დაცვა</a></li>
-                    <li><a href="#">მომხმარებლის ხმა</a></li>
-                    <li><a href="#">ხშირად დასმული კითხვები</a></li>
+                    <li><Link to="#">მონაცემთა დაცვა</Link></li>
+                    <li><Link to="#">მომხმარებლის ხმა</Link></li>
+                    <li><Link to="#">ხშირად დასმული კითხვები</Link></li>
                 </ul>
                 <ul className="mobile-footer-list">
-                    <li className="footer-container-list-item"><a href="#">
-                        <img className="mobile-footer-img" src={facebook} alt="facebook"/>Facebook</a>
+                    <li className="footer-container-list-item"><Link to="#">
+                        <img className="mobile-footer-img" src={facebook} alt="facebook"/>Facebook</Link>
                     </li>
-                    <li className="footer-container-list-item"><a href="#">
-                        <img className="mobile-footer-img" src={instagram} alt="instagram"/>Instagram</a>
+                    <li className="footer-container-list-item"><Link to="#">
+                        <img className="mobile-footer-img" src={instagram} alt="instagram"/>Instagram</Link>
                     </li>
-                    <li className="footer-container-list-item"><a href="#">
-                        <img className="mobile-footer-img" src={youtube} alt="youtube"/>Youtube</a>
+                    <li className="footer-container-list-item"><Link to="#">
+                        <img className="mobile-footer-img" src={youtube} alt="youtube"/>Youtube</Link>
                     </li>
-                    <li className="footer-container-list-item"><a href="#">
-                        <img className="mobile-footer-img" src={linkedin} alt="linkedin"/>Linkedin</a>
+                    <li className="footer-container-list-item"><Link to="#">
+                        <img className="mobile-footer-img" src={linkedin} alt="linkedin"/>Linkedin</Link>
                     </li>
                 </ul>
                 <div style={{fontSize: "14px", color: "#707070"}}>უნისონი © ყველა უფლება დაცულია, 2021</div>

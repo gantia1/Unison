@@ -1,23 +1,21 @@
 import React, {useState} from "react";
-import toggle from '../../img/toggle.svg';
 import {Modal, Offcanvas} from "react-bootstrap";
+import {ReactComponent as Toggle} from "../../img/toggle.svg";
 import {ReactComponent as UnisonLogo} from "../../img/uniLogo.svg";
 import {ReactComponent as Close} from "../../img/close.svg";
-import toggleIcon from "../../img/toggleIcon.png";
-import toggleIcon1 from "../../img/toggleIcon1.svg";
-import toggleIcon2 from "../../img/toggleIcon2.svg";
-import agent from "../../img/agent.png";
-import phone1 from "../../img/phone1.svg";
-import './mobile.scss';
-import closeWhite from '../../img/closeWhite.svg';
-import home1 from "../../img/home1.svg";
-import health1 from '../../img/health1.svg';
-import car1 from '../../img/car1.svg';
-import person1 from '../../img/person1.svg';
-import flight1 from '../../img/flight1.svg';
+import {ReactComponent as ToggleIcon} from "../../img/toggleIcon.svg";
+import {ReactComponent as ToggleIcon1} from "../../img/toggleIcon1.svg";
+import {ReactComponent as ToggleIcon2} from "../../img/toggleIcon2.svg";
+import {ReactComponent as Agent} from "../../img/agent.svg";
+import {ReactComponent as Phone1} from "../../img/phone1.svg";
+import {ReactComponent as CloseWhite} from "../../img/closeWhite.svg";
+import {ReactComponent as Home1} from "../../img/home1.svg";
+import {ReactComponent as Health} from "../../img/health1.svg";
+import {ReactComponent as Car} from "../../img/car1.svg";
+import {ReactComponent as Person} from "../../img/person1.svg";
+import {ReactComponent as Flight} from "../../img/flight1.svg";
+import './mobile.scss'
 import {Link, useLocation} from "react-router-dom";
-import {ReactComponent as backArrow} from "../../img/arrow.svg";
-
 
 function MobileHeader() {
     const [show, setShow] = useState(false);
@@ -78,7 +76,9 @@ function MobileHeader() {
                                  alt="mobile-img"/>
                         </Link>
                     </div>
-                    <div className='toggle' onClick={() => setShow(true)}><img src={toggle} alt="toggle"/></div>
+                    <div className='toggle' onClick={() => setShow(true)}>
+                        <Toggle/>
+                    </div>
                 </div>
             </div>
 
@@ -94,7 +94,7 @@ function MobileHeader() {
 
                         <div className="toggle-body">
                             <div className="myCabinet-nav">
-                                <a href="#">
+                                <Link to="#">
                                     <svg id="Component_8_12" data-name="Component 8 – 12"
                                          xmlns="http://www.w3.org/2000/svg"
                                          width="62"
@@ -109,14 +109,14 @@ function MobileHeader() {
                                         </g>
                                     </svg>
                                     <div className="myCabinet">ჩემი კაბინეტი</div>
-                                </a>
+                                </Link>
                                 <div className="sos-toggle-menu" onClick={() => setShowSos(true)}>SOS</div>
                             </div>
 
                             <div className="mobile-toggle-list">
                                 <div onClick={() => setShowSideMenu(true)}>
                                     <li className="mobile-toggle-list-item" style={{marginTop: "67px"}}>
-                                        <img src={toggleIcon} alt=""/> ფიზიკური პირებისთვის
+                                        <ToggleIcon/> <span>ფიზიკური პირებისთვის</span>
                                         <div className='toggle-arrow'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                  height="20.986" viewBox="0 0 20.986 20.986">
@@ -129,7 +129,7 @@ function MobileHeader() {
                                 </div>
                                 <div>
                                     <li className="mobile-toggle-list-item">
-                                        <img src={toggleIcon1} alt=""/> იურიდიული პირებისთვის
+                                        <ToggleIcon1/> <span>იურიდიული პირებისთვის</span>
                                         <div className='toggle-arrow'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                  height="20.986" viewBox="0 0 20.986 20.986">
@@ -143,8 +143,8 @@ function MobileHeader() {
                             </div>
                             <div>
                                 <li className="mobile-toggle-list-item">
-                                    <img src={toggleIcon2} alt="" style={{width: "16px", height: "20px"}}/>
-                                    სავალდებულო დაზღვევა
+                                    <ToggleIcon2/>
+                                    <span>სავალდებულო დაზღვევა</span>
                                     <div className='toggle-arrow'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                              height="20.986" viewBox="0 0 20.986 20.986">
@@ -157,7 +157,7 @@ function MobileHeader() {
                             </div>
                         </div>
                         <div className="connect-agent-toggle">
-                            <img src={agent} alt="phone-icon"/><p>აგენტთან დაკავშირება</p>
+                            <Agent/><p>აგენტთან დაკავშირება</p>
                         </div>
                         <div className="mobile-toggle-middle-list">
                             <ul>
@@ -183,7 +183,7 @@ function MobileHeader() {
                                 <ul>
                                     <li>ცხელი ხაზი</li>
                                     <li>
-                                        <a href="tel:0322991991"> <img src={phone1} alt="phone1"/> 2 991 991</a>
+                                        <a href="tel:0322991991"> <Phone1/> 2 991 991</a>
                                     </li>
                                 </ul>
                             </div>
@@ -203,15 +203,15 @@ function MobileHeader() {
                     <div className="sos-modal-content">
                         <div className="sos-modal-header">
                             <div className="sos-modal-title">
-                                SOS
-                                <img onClick={() => setShowSos(false)} src={closeWhite} alt="close"/>
+                                <span>SOS</span>
+                                <CloseWhite onClick={() => setShowSos(false)}/>
                             </div>
                         </div>
                         <div className="sos-modal-body">
                             <hr/>
-                            <a href='#'>მოხდა სადაზღვევო შემთხვევა</a>
+                            <Link to='#'>მოხდა სადაზღვევო შემთხვევა</Link>
                             <hr/>
-                            <a href="#">შემთხვევის სტატუსის შემოწმება</a>
+                            <Link to="#">შემთხვევის სტატუსის შემოწმება</Link>
                         </div>
                     </div>
                 </div>
@@ -227,27 +227,27 @@ function MobileHeader() {
                     <div className="side-menu-text">
 
                         <div className='side-menu-list'>
-                            <img src={home1} alt="home1"/>
-                            ქონების დაზღვევა
+                            <Home1/>
+                            <span>ქონების დაზღვევა</span>
                         </div>
 
                         <div className='side-menu-list'>
-                            <img src={health1} alt="health1"/>
-                            ინდივიდუალური ჯანმრთელობის დაზღვევა
+                            <Health/>
+                            <span>ინდივიდუალური ჯანმრთელობის დაზღვევა</span>
                         </div>
 
                         <div className='side-menu-list'>
-                            <img src={car1} alt="car1"/>
-                            ავტოდაზღვევა - პაკეტები
+                            <Car/>
+                            <span>ავტოდაზღვევა - პაკეტები</span>
                         </div>
 
                         <div className='side-menu-list'>
-                            <img src={person1} alt="person1"/>
+                            <Person/>
                             მძღოლის პასუხისმგებლობის დაზღვევა
                         </div>
                         <div className='side-menu-list'>
-                            <img src={flight1} alt="flight1"/>
-                            სამოგზაურო დაზღვევა
+                            <Flight/>
+                            <span>სამოგზაურო დაზღვევა</span>
                         </div>
 
 

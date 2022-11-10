@@ -1,19 +1,20 @@
 import React, {useEffect} from 'react';
-import home from '../../img/home.svg';
-import health from '../../img/health.svg';
-import car from '../../img/car.svg';
-import flight from '../../img/flight.svg';
-import person from '../../img/person.svg';
-import personC from '../../img/person2.png';
-import star from '../../img/star.svg';
-import touch from '../../img/touch.png';
+import {ReactComponent as HomeImg} from "../../img/home.svg";
+import {ReactComponent as Health} from "../../img/health.svg";
+import {ReactComponent as Car} from "../../img/car.svg";
+import {ReactComponent as Flight} from "../../img/flight.svg";
+import {ReactComponent as Person} from "../../img/person.svg";
+import {ReactComponent as PersonC} from "../../img/person2.svg";
+import {ReactComponent as Star} from "../../img/star.svg";
+import {ReactComponent as Touch} from "../../img/touch.svg";
 import timer from '../../img/timer.png';
-import people from '../../img/people.png';
+import {ReactComponent as People} from "../../img/people.svg";
 import awesome from '../../img/awesome.png';
 import home1 from '../../img/home1.png';
 import food from '../../img/food.png';
 import car1 from '../../img/car1.png';
 import {Link} from "react-router-dom";
+
 
 function Home() {
     useEffect(() => {
@@ -31,7 +32,7 @@ function Home() {
 
                 <div className="home-card">
                     <div className="home-card-body">
-                        <img src={home} alt="home"/>
+                        <HomeImg/>
                         <p>ქონების დაზღვევა</p>
                         <button className='home-card-btn'>შეძენა</button>
                     </div>
@@ -39,7 +40,7 @@ function Home() {
 
                 <div className="home-card">
                     <div className="home-card-body">
-                        <img src={health} alt="health"/>
+                        <Health/>
                         <p>ჯანმრთელობის დაზღვევა</p>
                         <button className='home-card-btn'>შეძენა</button>
                     </div>
@@ -47,7 +48,7 @@ function Home() {
 
                 <div className="home-card">
                     <div className="home-card-body">
-                        <img src={car} alt="car"/>
+                        <Car/>
                         <p>ავტომობილის დაზღვევა</p>
                         <button className='home-card-btn'>შეძენა</button>
                     </div>
@@ -55,7 +56,7 @@ function Home() {
 
                 <div className="home-card">
                     <div className="home-card-body">
-                        <img src={person} alt="person"/>
+                        <Person/>
                         <p>პასუხისმგებლობის დაზღვევა</p>
                         <button className='home-card-btn'>შეძენა</button>
                     </div>
@@ -63,7 +64,7 @@ function Home() {
 
                 <div className="home-card">
                     <div className="home-card-body">
-                        <img src={flight} alt="flight"/>
+                        <Flight/>
                         <p>სამოგზაურო დაზღვევა</p>
                         <button className='home-card-btn'>შეძენა</button>
                     </div>
@@ -82,21 +83,21 @@ function Home() {
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <img src={personC} alt="personC"/>
+                        <PersonC/>
                         <p>მომხმარებლის კმაყოფილების 96%-იანი დონე</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <img src={star} alt="star"/>
+                        <Star/>
                         <p>მაღალრეიტინგული გადამზღვევი კომპანიები</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <img src={touch} alt="touch"/>
+                        <Touch/>
                         <p>თანამედროვე ელექტრონული სერვისები</p>
                     </div>
                 </div>
@@ -110,7 +111,7 @@ function Home() {
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <img src={people} alt="people"/>
+                        <People/>
                         <p>კორპორატიული კლიენტების ფართო სპექტრი</p>
                     </div>
                 </div>
@@ -132,33 +133,27 @@ function Home() {
             <div className='news-container'>
 
                 <div className="news-card">
-                    <Link to={"/news/1"} onClick={scrollTop}>
-                        <div className="news-body">
-                            <img src={home1} alt="home1"/>
-                            <div className='lg-text'>ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი</div>
-                            <div className='sm-text'>6 ნოემბერი</div>
-                        </div>
-                    </Link>
+                    <div className="news-body">
+                        <img src={home1} alt="home1"/>
+                        <div className='lg-text'>ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი</div>
+                        <div className='sm-text'>6 ნოემბერი</div>
+                    </div>
                 </div>
 
                 <div className="news-card">
-                    <Link to={"/news/1"} onClick={scrollTop}>
-                        <div className="news-body">
-                            <img src={food} alt="food"/>
-                            <div className='lg-text'>ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან</div>
-                            <div className='sm-text'>28 ოქტომბერი</div>
-                        </div>
-                    </Link>
+                    <div className="news-body">
+                        <img src={food} alt="food"/>
+                        <div className='lg-text'>ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან</div>
+                        <div className='sm-text'>28 ოქტომბერი</div>
+                    </div>
                 </div>
 
                 <div className="news-card">
-                    <Link to={"/news/1"} onClick={scrollTop}>
-                        <div className="news-body">
-                            <img src={car1} alt="car1"/>
-                            <div className='lg-text'>ავტომობილის სალონის მოვლის თანამედროვე ხერხები</div>
-                            <div className='sm-text'>14 ოქტომბერი</div>
-                        </div>
-                    </Link>
+                    <div className="news-body">
+                        <img src={car1} alt="car1"/>
+                        <div className='lg-text'>ავტომობილის სალონის მოვლის თანამედროვე ხერხები</div>
+                        <div className='sm-text'>14 ოქტომბერი</div>
+                    </div>
                 </div>
 
             </div>

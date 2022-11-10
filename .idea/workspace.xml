@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="NewsDetail">
+    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mobile/mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/car.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/car.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/flight.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/flight.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/health.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/health.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/people.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/person.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/person.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/person2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/touch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +60,7 @@
       <recent name="$PROJECT_DIR$/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/backData/news" />
       <recent name="$PROJECT_DIR$/src/styles" />
     </key>
   </component>
@@ -105,7 +116,8 @@
       <workItem from="1667543074145" duration="24309000" />
       <workItem from="1667801812548" duration="22086000" />
       <workItem from="1667888281277" duration="26465000" />
-      <workItem from="1667974881226" duration="9963000" />
+      <workItem from="1667974881226" duration="18837000" />
+      <workItem from="1668060622286" duration="11197000" />
     </task>
     <task id="LOCAL-00001" summary="contact">
       <created>1667299868101</created>
@@ -149,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667830096941</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Partners">
+      <created>1667990147866</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667990147866</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +206,7 @@
     <MESSAGE value="contact" />
     <MESSAGE value="News" />
     <MESSAGE value="NewsDetail" />
-    <option name="LAST_COMMIT_MESSAGE" value="NewsDetail" />
+    <MESSAGE value="Partners" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partners" />
   </component>
 </project>

@@ -25,35 +25,36 @@ function Footer() {
                         </li>
                         <li className='footer-list-item'><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link>
                         </li>
-                        <li className='footer-list-item'><a href="#">კარიერა</a></li>
-                        <li className='footer-list-item'><Link to="/partners" onClick={scrollTop}>პარტნიორები</Link></li>
+                        <li className='footer-list-item'><Link to="#">კარიერა</Link></li>
+                        <li className='footer-list-item'><Link to="/partners" onClick={scrollTop}>პარტნიორები</Link>
+                        </li>
                     </ul>
                     <ul>
 
                         <li className='footer-list-item'><strong>ინფორმაცია</strong></li>
                         <li className='footer-list-item'><Link to="/news" onClick={scrollTop}>სიახლეები</Link></li>
-                        <li className='footer-list-item'><a href="#">საინფორმაციო ფურცელი</a></li>
-                        <li className='footer-list-item'><a href="#">სამედიცინო პროვაიდერები</a></li>
-                        <li className='footer-list-item'><a href="#">ხელშეკრულებები</a></li>
+                        <li className='footer-list-item'><Link to="#">საინფორმაციო ფურცელი</Link></li>
+                        <li className='footer-list-item'><Link to="#">სამედიცინო პროვაიდერები</Link></li>
+                        <li className='footer-list-item'><Link to="#">ხელშეკრულებები</Link></li>
                         <li className='footer-list-item footer-text'>უნისონი © ყველა უფლება დაცულია, 2021</li>
                     </ul>
                     <ul>
                         <li className='footer-list-item'><strong>დახმარება</strong></li>
                         <li className='footer-list-item'><Link to='/contact' onClick={scrollTop}>კონტაქტი</Link></li>
-                        <li className='footer-list-item'><a href="#">მომხმარებლის ხმა</a></li>
-                        <li className='footer-list-item'><a href="#">ხშირად დასმული კითხვები</a></li>
-                        <li className='footer-list-item'><a href="#">მონაცემთა დაცვა</a></li>
+                        <li className='footer-list-item'><Link to="#">მომხმარებლის ხმა</Link></li>
+                        <li className='footer-list-item'><Link to="#">ხშირად დასმული კითხვები</Link></li>
+                        <li className='footer-list-item'><Link to="#">მონაცემთა დაცვა</Link></li>
                     </ul>
                     <ul>
                         <li className='footer-list-item'><strong>სოციალური ქსელები</strong></li>
-                        <li className='footer-list-item'><a href='#'><img className='footer-img' src={facebook}
-                                                                          alt="facebook"/> Facebook</a></li>
-                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={instagram}
-                                                                          alt="instagram"/> Instagram</a></li>
-                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={linkedin}
-                                                                          alt="linkedin"/> Linkedin</a></li>
-                        <li className='footer-list-item'><a href="#"><img className='footer-img' src={youtube}
-                                                                          alt="youtube"/> Youtube</a></li>
+                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={facebook}
+                                                                           alt="facebook"/> Facebook</Link></li>
+                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={instagram}
+                                                                           alt="instagram"/> Instagram</Link></li>
+                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={linkedin}
+                                                                           alt="linkedin"/> Linkedin</Link></li>
+                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={youtube}
+                                                                           alt="youtube"/> Youtube</Link></li>
                     </ul>
 
                 </div>

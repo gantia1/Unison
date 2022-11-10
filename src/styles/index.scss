@@ -243,6 +243,10 @@ a {
   transition: all 0.3s ease-in;
 }
 
+.connect-agent svg {
+  margin: 10px;
+}
+
 .connect-agent:hover {
   width: 165px;
   transition: all 0.3s ease-in;
@@ -433,8 +437,8 @@ a {
   }
 }
 
-.home-card:hover img {
-  filter: brightness(0) invert(1);
+.home-card:hover svg path {
+  fill: #fff;
 }
 
 .home-card-btn {
@@ -564,6 +568,7 @@ a {
   overflow-x: scroll;
   overflow-y: hidden;
   -ms-overflow-style: none;
+  scrollbar-width: none;
   @extend %container;
 }
 
@@ -715,11 +720,6 @@ a {
   .phone {
     margin-bottom: 11.4%;
   }
-
-  .phone img {
-    vertical-align: middle !important;
-  }
-
   .lang {
     transform: translateY(16px);
   }

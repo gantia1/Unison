@@ -2,9 +2,9 @@ import {ReactComponent as Georgian} from "../../img/ka.svg";
 import en from '../../img/en.png';
 import ru from '../../img/ru.png';
 import arrow from '../../img/arrow.svg';
-import phone from '../../img/phone.svg';
+import {ReactComponent as Phone} from "../../img/phone.svg";
+import {ReactComponent as Agent} from "../../img/agent.svg";
 import {Link} from "react-router-dom";
-import agent from "../../img/agent.png";
 
 function Index() {
 
@@ -20,8 +20,8 @@ function Index() {
                     <li><Link to="/contact" className='nav-item'>კონტაქტი</Link></li>
                     <li className='dropdown'> SOS
                         <div className="dropdown-content">
-                            <div className='dropdown-text'><a href='#'>მოხდა სადაზღვეო შემთხვევა</a></div>
-                            <div className="dropdown-text"><a href='#'>შემთხვევის სტატუსის შემოწმება</a></div>
+                            <div className='dropdown-text'><Link to='#'>მოხდა სადაზღვეო შემთხვევა</Link></div>
+                            <div className="dropdown-text"><Link to='#'>შემთხვევის სტატუსის შემოწმება</Link></div>
                         </div>
                     </li>
                 </ul>
@@ -30,18 +30,18 @@ function Index() {
                     <ul>
 
                         <li className='choose-lang'>
-                            <a href="#">
+                            <Link to="#">
                                 <Georgian/><span>ქართული</span>
                                 <img className='lang-img img-arrow' src={arrow} alt='arrow'/>
-                            </a>
+                            </Link>
                             <div className='lang'>
 
                                 <div className='lang-a'>
-                                    <a href='#'> <img className='lang-img' src={en} alt='lang-img'/> English </a>
+                                    <Link to='#'><img className='lang-img' src={en} alt='lang-img'/> English </Link>
                                 </div>
 
                                 <div className='lang-a'>
-                                    <a href='#'><img className='lang-img' src={ru} alt='lang-img'/> Русский</a>
+                                    <Link to='#'><img className='lang-img' src={ru} alt='lang-img'/> Русский</Link>
                                 </div>
 
                             </div>
@@ -49,8 +49,7 @@ function Index() {
 
                         <li>
                             <div className='phone-border'>
-                                <div className='phone'><a href="tel:0322991991">ცხელი ხაზი <img src={phone}
-                                                                                                alt='phone'/> 2 911 911</a>
+                                <div className='phone'><a href="tel:0322991991">ცხელი ხაზი <Phone/> 2 911 911</a>
                                 </div>
                             </div>
                         </li>
@@ -61,7 +60,7 @@ function Index() {
             </div>
             <div className="agent">
                 <div className='connect-agent'>
-                    <div><img src={agent} alt="agent"/></div>
+                    <div><Agent/></div>
                     აგენტთან დაკავშირება
                 </div>
             </div>
