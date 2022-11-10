@@ -1,0 +1,331 @@
+%partners-gradient {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), #006a9f);
+  opacity: 1;
+  height: 232px;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+}
+
+.special-offer-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 0;
+  border-color: #EE303C transparent transparent transparent;
+  filter: brightness(70%);
+  transform: translate(8px, 77px);
+}
+
+%special-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 8px;
+  color: #fff;
+  position: absolute;
+  font-size: 18px;
+  margin-top: 30px;
+  background-color: #EE303C;
+}
+
+//.modal-open {
+//  padding-right: 0 !important;
+//  overflow: unset !important;
+//}
+
+.partners-header {
+  background-image: url("../../img/partnersHeaderBG.png");
+  height: 352px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 4px solid #EE303C;
+
+  .partners-gradient-top {
+    @extend %partners-gradient;
+    rotate: 180deg;
+  }
+
+  .partners-gradient-bottom {
+    @extend %partners-gradient;
+    bottom: 0;
+    top: 167px;
+  }
+}
+
+.partners-content {
+  position: relative;
+  z-index: 3;
+  transform: translateY(-182px);
+  margin-bottom: -182px;
+
+  .partners-header-text {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+
+  .partners-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1364px;
+    padding: 0 16px;
+  }
+
+  .partners-tab {
+    background: #EE303C;
+    border-radius: 12px 12px 0 0;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    height: 85px;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners-tab svg {
+    margin-right: 10px;
+  }
+
+  .active {
+    background: #fff;
+    color: #707070;
+    height: 87px;
+  }
+
+  .partners-cards {
+    background-image: url("../../img/background.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    background-origin: padding-box;
+    justify-content: space-between;
+    grid-gap: 31px 16px;
+    max-width: 1364px;
+    margin: 0 auto;
+    padding: 31px 16px;
+  }
+
+  .partners-card {
+    width: 100%;
+  }
+
+  .special-offer-container {
+    display: flex;
+    justify-content: end;
+    height: 0;
+  }
+
+  .special-offer-title {
+    inline-size: 120px;
+    word-break: break-all;
+  }
+
+  .special-offer {
+    @extend %special-offer;
+    transform: translateX(8px);
+  }
+
+  .partner-card img {
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 294px;
+    transition: .3s ease-out;
+    object-fit: cover;
+  }
+
+  .partner-card img:hover {
+    border: 2px solid #006A9F;
+    transition: .3s ease-out;
+  }
+
+  .partner-card-title {
+    color: #707070;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 10px 7px;
+  }
+
+  .partner-card-address {
+    color: #707070;
+    margin: 0 10px 52px;
+    font-size: 14px;
+  }
+}
+
+//partners modal
+
+.partners-modal {
+  margin-top: 50px;
+
+  .modal-dialog {
+    max-width: 650px;
+  }
+
+  .partners-modal-close {
+    transform: translateY(-83px);
+    cursor: pointer;
+  }
+
+  .partners-modal-header {
+    border: none;
+    margin-bottom: -60px;
+  }
+
+  .partners-modal-close svg {
+    rotate: 0deg;
+    transition: .3s ease-out;
+  }
+
+  .partners-modal-close svg:hover {
+    rotate: -90deg;
+    transition: .3s ease-out;
+  }
+
+  .partners-modal-close svg:hover circle {
+    fill: #EE303C;
+  }
+
+  .partners-modal-body {
+    color: #707070;
+    font-weight: bold !important;
+    margin: 0 30px 70px;
+  }
+
+  .modal-special-offer-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .modal-special-offer {
+    @extend %special-offer;
+    margin: 10px -5px 0 0;
+  }
+
+  .partners-modal-head {
+    font-size: 24px;
+  }
+
+  .partners-modal-title {
+    display: flex;
+    font-size: 16px;
+    margin: 24px 0 15px;
+  }
+
+  .partners-modal-title svg, .partners-modal-text svg {
+    margin-right: 10px;
+  }
+
+  .partners-modal-text {
+    display: flex;
+  }
+
+  .partners-modal-description {
+    margin-left: 35px;
+  }
+
+}
+
+.partners-modal-img {
+  width: 270px;
+  margin-left: 20px;
+  filter: drop-shadow(0px 10px 40px #006A9F1A);
+  transform: translateY(-50px);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px #006A9F1A;
+}
+
+//mobile
+
+@media (max-width: 1024px) {
+  .partners-header {
+    height: 239px;
+  }
+  .partners-content {
+    transform: translateY(-160px);
+    margin-bottom: -160px;
+  }
+  .partners-header-text {
+    font-size: 24pt !important;
+    transform: translateY(25px) !important;
+  }
+  .partners-tab {
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 10px !important;
+    text-align: center !important;
+  }
+  .partners-tab svg {
+    width: 31px !important;
+    margin: 0 !important;
+  }
+  .partners-gradient-bottom {
+    top: 3px !important;
+  }
+  .partners-cards {
+    display: block !important;
+
+    .partner-card img {
+      height: 214px !important;
+    }
+  }
+  //  partners modal
+
+  .partners-modal-body {
+    margin-bottom: 24px !important;
+  }
+  .modal-special-offer-container {
+    position: absolute;
+    right: 0;
+    margin-right: 18px;
+    transform: translateY(75px);
+  }
+  .partners-modal-header {
+    display: flex;
+    flex-direction: column;
+
+    .partners-modal-img {
+      margin: 45px 50px;
+      transform: none;
+      width: 100%;
+    }
+
+    .partners-modal-close {
+      transform: none !important;
+    }
+
+    .partners-modal-close svg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 10px;
+    }
+
+    .partners-modal-close svg circle {
+      fill: #fff;
+    }
+
+    .partners-modal-close svg path {
+      fill: #EE303C;
+    }
+
+    .partners-modal-close svg:hover {
+      rotate: none !important;
+    }
+
+    .partners-modal-close svg:hover circle {
+      fill: #fff !important;
+    }
+  }
+}

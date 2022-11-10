@@ -2,6 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="PartnersMobile">
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Contact.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/ContactOffCanvas.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/NewsDetail.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/Partners.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/news.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/partners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/agent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/arrowBack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/campaign.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/contactBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/feedback.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/health1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsCardImg9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsTopBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newsTopMobileBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/newspaper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/pageArrowLeft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/pageArrowRight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnerClose.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnersHeaderBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnersImg1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnersImg2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnersImg3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnersImg4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/partnersImg5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/people.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/person2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/public.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/shipping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/store.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/toggleIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/touch.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,20 +65,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lenovo/WebstormProjects/unison/src/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/lenovo/WebstormProjects/unison/src/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/img" />
@@ -101,7 +142,7 @@
       <workItem from="1667888281277" duration="26465000" />
       <workItem from="1667974881226" duration="18837000" />
       <workItem from="1668060622286" duration="16217000" />
-      <workItem from="1668084003253" duration="615000" />
+      <workItem from="1668084003253" duration="2261000" />
     </task>
     <task id="LOCAL-00001" summary="contact">
       <created>1667299868101</created>
@@ -166,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668075359824</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="PartnersMobile">
+      <created>1668085102574</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668085102574</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
