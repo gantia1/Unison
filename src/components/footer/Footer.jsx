@@ -47,14 +47,30 @@ function Footer() {
                     </ul>
                     <ul>
                         <li className='footer-list-item'><strong>სოციალური ქსელები</strong></li>
-                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={facebook}
-                                                                           alt="facebook"/> Facebook</Link></li>
-                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={instagram}
-                                                                           alt="instagram"/> Instagram</Link></li>
-                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={linkedin}
-                                                                           alt="linkedin"/> Linkedin</Link></li>
-                        <li className='footer-list-item'><Link to="#"><img className='footer-img' src={youtube}
-                                                                           alt="youtube"/> Youtube</Link></li>
+                        <li className='footer-list-item'>
+                            <Link to="#">
+                                <img className='footer-img' src={facebook} alt="facebook"/>
+                                Facebook
+                            </Link>
+                        </li>
+                        <li className='footer-list-item'>
+                            <Link to="#">
+                                <img className='footer-img' src={instagram} alt="instagram"/>
+                                Instagram
+                            </Link>
+                        </li>
+                        <li className='footer-list-item'>
+                            <Link to="#">
+                                <img className='footer-img' src={linkedin} alt="linkedin"/>
+                                Linkedin
+                            </Link>
+                        </li>
+                        <li className='footer-list-item'>
+                            <Link to="#">
+                                <img className='footer-img' src={youtube} alt="youtube"/>
+                                Youtube
+                            </Link>
+                        </li>
                     </ul>
 
                 </div>
