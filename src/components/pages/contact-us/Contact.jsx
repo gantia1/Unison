@@ -19,7 +19,7 @@ function Contact() {
     };
 
     return (
-        <div className="contact">
+        <div className="pages-header">
 
             <div className="contact-top">
                 <div className="contact-gradient-top"></div>

@@ -25,7 +25,7 @@ function Footer() {
                         </li>
                         <li className='footer-list-item'><Link to="/about-us" onClick={scrollTop}>ჩვენს შესახებ</Link>
                         </li>
-                        <li className='footer-list-item'><Link to="#">კარიერა</Link></li>
+                        <li className='footer-list-item'><Link to="/career" onClick={scrollTop}>კარიერა</Link></li>
                         <li className='footer-list-item'><Link to="/partners" onClick={scrollTop}>პარტნიორები</Link>
                         </li>
                     </ul>
