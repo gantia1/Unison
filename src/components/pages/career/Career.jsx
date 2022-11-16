@@ -8,14 +8,22 @@ import {ReactComponent as CardArrowLeft} from "../../../img/pageArrowLeft.svg";
 import {ReactComponent as CardArrowRight} from "../../../img/pageArrowRight.svg";
 import {Link} from "react-router-dom";
 import CareerModal from "./CareerModal";
+import {ReactComponent as Collapse} from "../../../img/collapse.svg";
 
 function Career() {
     const [activeCard, setActiveCard] = useState(1);
     const ref = useRef(null);
     const [showCareerModal, setShowCareerModal] = useState(false);
+    const [collapseText, setCollapseText] = useState("false");
+
+    const handleToggle = () => {
+        setCollapseText(!collapseText);
+    };
 
     const handleClick = (id) => {
-        setActiveCard(id);
+        if (window.innerWidth > 1024) {
+            setActiveCard(id);
+        }
     };
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
@@ -44,6 +52,12 @@ function Career() {
         }
     }
 
+    function scrollTop() {
+        setShowCareerModal(true);
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }
+
+
     return (
         <>
             <div className="pages-header">
@@ -57,7 +71,7 @@ function Career() {
                     <div>
                         <div className="career-content">
                             <div className="career-left-side">
-                                <h1 className="career-top-text">კარიერა</h1>
+                                <div className="career-top-text"><h1>კარიერა</h1></div>
                                 <div className='career-top-header'><h1>#გახდიუნისონელი</h1></div>
                                 <p>თუ გსურს შემოუერთდე ჩვენ გუნდს, დაგვიტოვე ინფორმაცია:</p>
                                 <Button className="upload-cv btn-primary" variant="primary" type="submit">
@@ -69,14 +83,17 @@ function Career() {
                                            name="upload-cv"/>
                                 </Button>
                                 <p> ან <span className="career-form-image"><FormImage/></span>
-                                    <span className="career-form-open" onClick={() => setShowCareerModal(true)}>
+                                    <span className="career-form-open" onClick={() => scrollTop()}>
                                 შეავსეთ ფორმა
                             </span>
                                 </p>
                             </div>
 
-                            <div className="career-right-side">
-                                <h1>ჩვენი HR გუნდი</h1>
+                            <div className={collapseText ? "career-right-side" : "career-right-side-active"}>
+                                <div className="career-hr-header">
+                                    <h1>ჩვენი HR გუნდი</h1>
+                                    <Collapse onClick={handleToggle}/>
+                                </div>
                                 <p>
                                     “უნისონი” ერთ-ერთი წამყვანი სადაზღვევო კომპანიაა საქართველოში. ამაში კი, უდიდესი
                                     წვლილი მისი
@@ -134,13 +151,20 @@ function Career() {
                                             <h3>გიორგი გიორგაძე</h3>
                                             <span>გენერალური დირექტორი</span>
                                         </div>
-                                        <div className="career-team-text"><p>2006 წელს დაამთავრა თბილისის სახელმწიფო
-                                            უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი. ფლობს საერთაშორისო სამართლის
-                                            მაგისტრის
-                                            ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება. 2004
-                                            წლიდან
-                                            მუშაობს
-                                            სადაზღვევო კომპანია ალდაგში, სადაც მისი კარიერა კორპორატიული კლიენტების…</p>
+                                        <div className="career-team-text">
+                                            <div className="career-team-text-title-mobile">
+                                                <h3>გიორგი გიორგაძე</h3>
+                                                <span>გენერალური დირექტორი</span>
+                                            </div>
+                                            <p>2006 წელს დაამთავრა თბილისის სახელმწიფო
+                                                უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი. ფლობს საერთაშორისო
+                                                სამართლის
+                                                მაგისტრის
+                                                ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება. 2004
+                                                წლიდან
+                                                მუშაობს
+                                                სადაზღვევო კომპანია ალდაგში, სადაც მისი კარიერა კორპორატიული
+                                                კლიენტების…</p>
                                         </div>
 
                                     </div>
@@ -156,13 +180,21 @@ function Career() {
                                             <h3>გიორგი გიორგაძე</h3>
                                             <span>გენერალური დირექტორი</span>
                                         </div>
-                                        <div className="career-team-text"><p>2006 წელს დაამთავრა თბილისის სახელმწიფო
-                                            უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი. ფლობს საერთაშორისო სამართლის
-                                            მაგისტრის
-                                            ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება. 2004
-                                            წლიდან
-                                            მუშაობს
-                                            სადაზღვევო კომპანია ალდაგში, სადაც მისი კარიერა კორპორატიული კლიენტების…</p>
+                                        <div className="career-team-text">
+                                            <div className="career-team-text-title-mobile">
+                                                <h3>გიორგი გიორგაძე</h3>
+                                                <span>გენერალური დირექტორი</span>
+                                            </div>
+                                            <p>2006 წელს დაამთავრა თბილისის სახელმწიფო
+                                                უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი. ფლობს საერთაშორისო
+                                                სამართლის
+                                                მაგისტრის
+                                                ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება. 2004
+                                                წლიდან
+                                                მუშაობს
+                                                სადაზღვევო კომპანია ალდაგში, სადაც მისი კარიერა კორპორატიული
+                                                კლიენტების…
+                                            </p>
                                         </div>
 
                                     </div>
@@ -178,13 +210,21 @@ function Career() {
                                             <h3>გიორგი გიორგაძე</h3>
                                             <span>გენერალური დირექტორი</span>
                                         </div>
-                                        <div className="career-team-text"><p>2006 წელს დაამთავრა თბილისის სახელმწიფო
-                                            უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი. ფლობს საერთაშორისო სამართლის
-                                            მაგისტრის
-                                            ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება. 2004
-                                            წლიდან
-                                            მუშაობს
-                                            სადაზღვევო კომპანია ალდაგში, სადაც მისი კარიერა კორპორატიული კლიენტების…</p>
+                                        <div className="career-team-text">
+                                            <div className="career-team-text-title-mobile">
+                                                <h3>გიორგი გიორგაძე</h3>
+                                                <span>გენერალური დირექტორი</span>
+                                            </div>
+                                            <p>2006 წელს დაამთავრა თბილისის სახელმწიფო
+                                                უნივერსიტეტი-საერთაშორისო სამართლის ფაკულტეტი. ფლობს საერთაშორისო
+                                                სამართლის
+                                                მაგისტრის
+                                                ხარისხს. აქვს სადაზღვევო სექტორში მუშაობის 15 წლიანი გამოცდილება. 2004
+                                                წლიდან
+                                                მუშაობს
+                                                სადაზღვევო კომპანია ალდაგში, სადაც მისი კარიერა კორპორატიული
+                                                კლიენტების…
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

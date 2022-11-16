@@ -110,7 +110,7 @@ function CareerModal(props) {
                         <div className="career-modal-add-title"><p>მსურს ელ-ფოსტაზე მივიღო კომპანიის მიმდინარე
                             ვაკანსიები და სიახლეები</p>
 
-                            <div className="d-flex my-3">
+                            <div className="modal-footer-check d-flex my-3">
                                 <div className="form-check ">
                                     <input className="form-check-input" type="radio" name="flexRadioDefault"
                                            id="flexRadioDefault1" checked/>

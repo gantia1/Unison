@@ -680,21 +680,20 @@ input[type=number] {
       min-width: 199px;
     }
   }
-  .contact {
-    .contact-top {
-      height: 185px;
-    }
 
-    .contact-gradient-top {
-      top: 0;
-      height: 185px;
-    }
-
-    .contact-gradient-bottom {
-      top: 120px;
-      height: 69px;
-    }
+  .contact-top {
+    height: 185px !important;
   }
+  .contact-gradient-top {
+    top: 0 !important;
+    height: 185px !important;
+  }
+
+  .contact-gradient-bottom {
+    top: 120px !important;
+    height: 62px !important;
+  }
+
 
   .contact-us {
     padding: 0 30px;

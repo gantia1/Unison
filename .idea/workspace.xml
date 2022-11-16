@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="CareerDesktop">
-      <change afterPath="$PROJECT_DIR$/src/components/pages/career/CareerModal.jsx" afterDir="false" />
+    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="CareerDesktop-ModalForm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/career/Career.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/career/Career.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/career/CareerModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/career/CareerModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/career.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/career.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/pages.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,8 @@
       <workItem from="1668084003253" duration="7650000" />
       <workItem from="1668148135428" duration="18797000" />
       <workItem from="1668406824865" duration="25541000" />
-      <workItem from="1668493149434" duration="18949000" />
+      <workItem from="1668493149434" duration="25703000" />
+      <workItem from="1668579218973" duration="16746000" />
     </task>
     <task id="LOCAL-00001" summary="contact">
       <created>1667299868101</created>
@@ -208,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668437083917</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="CareerDesktop-ModalForm">
+      <created>1668512487822</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668512487822</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +261,7 @@
     <MESSAGE value="Unison" />
     <MESSAGE value="folders" />
     <MESSAGE value="CareerDesktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="CareerDesktop" />
+    <MESSAGE value="CareerDesktop-ModalForm" />
+    <option name="LAST_COMMIT_MESSAGE" value="CareerDesktop-ModalForm" />
   </component>
 </project>
