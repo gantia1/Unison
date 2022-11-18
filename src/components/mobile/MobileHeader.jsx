@@ -1,19 +1,19 @@
 import React, {useState} from "react";
 import {Modal, Offcanvas} from "react-bootstrap";
-import {ReactComponent as Toggle} from "../../img/toggle.svg";
-import {ReactComponent as UnisonLogo} from "../../img/uniLogo.svg";
-import {ReactComponent as Close} from "../../img/close.svg";
-import {ReactComponent as ToggleIcon} from "../../img/toggleIcon.svg";
-import {ReactComponent as ToggleIcon1} from "../../img/toggleIcon1.svg";
-import {ReactComponent as ToggleIcon2} from "../../img/toggleIcon2.svg";
-import {ReactComponent as Agent} from "../../img/agent.svg";
-import {ReactComponent as Phone1} from "../../img/phone1.svg";
-import {ReactComponent as CloseWhite} from "../../img/closeWhite.svg";
-import {ReactComponent as Home1} from "../../img/home1.svg";
-import {ReactComponent as Health} from "../../img/health1.svg";
-import {ReactComponent as Car} from "../../img/car1.svg";
-import {ReactComponent as Person} from "../../img/person1.svg";
-import {ReactComponent as Flight} from "../../img/flight1.svg";
+import {ReactComponent as Toggle} from "../../img/svg/toggle.svg";
+import {ReactComponent as UnisonLogo} from "../../img/svg/uniLogo.svg";
+import {ReactComponent as Close} from "../../img/svg/close.svg";
+import {ReactComponent as ToggleIcon} from "../../img/svg/toggleIcon.svg";
+import {ReactComponent as ToggleIcon1} from "../../img/svg/toggleIcon1.svg";
+import {ReactComponent as ToggleIcon2} from "../../img/svg/toggleIcon2.svg";
+import {ReactComponent as Agent} from "../../img/svg/agent.svg";
+import {ReactComponent as Phone1} from "../../img/svg/phone1.svg";
+import {ReactComponent as CloseWhite} from "../../img/svg/closeWhite.svg";
+import {ReactComponent as Home1} from "../../img/svg/home1.svg";
+import {ReactComponent as Health} from "../../img/svg/health1.svg";
+import {ReactComponent as Car} from "../../img/svg/car1.svg";
+import {ReactComponent as Person} from "../../img/svg/person1.svg";
+import {ReactComponent as Flight} from "../../img/svg/flight1.svg";
 import './mobile.scss'
 import {Link, useLocation} from "react-router-dom";
 

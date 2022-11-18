@@ -1,9 +1,9 @@
 import React from "react";
 import '../../../styles/career.scss';
 import {Button, Form} from "react-bootstrap";
-import {ReactComponent as CareerModalClose} from "../../../img/partnerClose.svg";
-import {ReactComponent as Add} from "../../../img/add.svg";
-import {ReactComponent as Send} from "../../../img/send.svg"
+import {ReactComponent as CareerModalClose} from "../../../img/svg/partnerClose.svg";
+import {ReactComponent as Add} from "../../../img/svg/add.svg";
+import {ReactComponent as Send} from "../../../img/svg/send.svg"
 
 
 function CareerModal(props) {

@@ -1,13 +1,13 @@
 import React from 'react';
-import newsCardImg1 from "../../../img/home1.png";
-import newsCardImg2 from "../../../img/car1.png";
-import newsCardImg3 from "../../../img/food.png";
-import newsCardImg4 from "../../../img/newsCardImg8.png";
-import newsCardImg5 from "../../../img/newsCardImg4.png";
-import newsCardImg6 from "../../../img/newsCardImg5.png";
-import newsCardImg8 from "../../../img/newsCardImg7.png";
-import newsCardImg9 from "../../../img/newsCardImg9.png";
-import newsCardImg10 from "../../../img/newsCardImg10.png";
+import newsCardImg1 from "../../../img/png/home1.png";
+import newsCardImg2 from "../../../img/png/car1.png";
+import newsCardImg3 from "../../../img/png/food.png";
+import newsCardImg4 from "../../../img/png/newsCardImg8.png";
+import newsCardImg5 from "../../../img/png/newsCardImg4.png";
+import newsCardImg6 from "../../../img/png/newsCardImg5.png";
+import newsCardImg8 from "../../../img/png/newsCardImg7.png";
+import newsCardImg9 from "../../../img/png/newsCardImg9.png";
+import newsCardImg10 from "../../../img/png/newsCardImg10.png";
 
 
 function NewsDetail() {

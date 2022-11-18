@@ -1,14 +1,14 @@
 import React, {useRef, useState} from 'react';
 import '../../../styles/career.scss';
 import {Button} from "react-bootstrap";
-import {ReactComponent as Upload} from "../../../img/upload.svg";
-import {ReactComponent as FormImage} from "../../../img/formImage.svg";
-import testImage from "../../../img/aboutUsCard2.png";
-import {ReactComponent as CardArrowLeft} from "../../../img/pageArrowLeft.svg";
-import {ReactComponent as CardArrowRight} from "../../../img/pageArrowRight.svg";
+import {ReactComponent as Upload} from "../../../img/svg/upload.svg";
+import {ReactComponent as FormImage} from "../../../img/svg/formImage.svg";
+import testImage from "../../../img/png/aboutUsCard2.png";
+import {ReactComponent as CardArrowLeft} from "../../../img/svg/pageArrowLeft.svg";
+import {ReactComponent as CardArrowRight} from "../../../img/svg/pageArrowRight.svg";
 import {Link} from "react-router-dom";
 import CareerModal from "./CareerModal";
-import {ReactComponent as Collapse} from "../../../img/collapse.svg";
+import {ReactComponent as Collapse} from "../../../img/svg/collapse.svg";
 
 function Career() {
     const [activeCard, setActiveCard] = useState(1);

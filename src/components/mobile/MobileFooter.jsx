@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
-import unisonLogo from '../../img/unisonLogo.svg';
-import facebook from '../../img/facebook.png';
-import instagram from '../../img/instagram.png';
-import linkedin from '../../img/linkedin.png';
-import youtube from '../../img/youtube.png';
+import unisonLogo from '../../img/svg/unisonLogo.svg';
+import facebook from '../../img/png/facebook.png';
+import instagram from '../../img/png/instagram.png';
+import linkedin from '../../img/png/linkedin.png';
+import youtube from '../../img/png/youtube.png';
 import './mobile.scss';
 import {Link} from "react-router-dom";
 

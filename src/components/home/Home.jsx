@@ -1,18 +1,18 @@
 import React, {useEffect} from 'react';
-import {ReactComponent as HomeImg} from "../../img/home.svg";
-import {ReactComponent as Health} from "../../img/health.svg";
-import {ReactComponent as Car} from "../../img/car.svg";
-import {ReactComponent as Flight} from "../../img/flight.svg";
-import {ReactComponent as Person} from "../../img/person.svg";
-import {ReactComponent as PersonC} from "../../img/person2.svg";
-import {ReactComponent as Star} from "../../img/star.svg";
-import {ReactComponent as Touch} from "../../img/touch.svg";
-import timer from '../../img/timer.png';
-import {ReactComponent as People} from "../../img/people.svg";
-import awesome from '../../img/awesome.png';
-import home1 from '../../img/home1.png';
-import food from '../../img/food.png';
-import car1 from '../../img/car1.png';
+import {ReactComponent as HomeImg} from "../../img/svg/home.svg";
+import {ReactComponent as Health} from "../../img/svg/health.svg";
+import {ReactComponent as Car} from "../../img/svg/car.svg";
+import {ReactComponent as Flight} from "../../img/svg/flight.svg";
+import {ReactComponent as Person} from "../../img/svg/person.svg";
+import {ReactComponent as PersonC} from "../../img/svg/person2.svg";
+import {ReactComponent as Star} from "../../img/svg/star.svg";
+import {ReactComponent as Touch} from "../../img/svg/touch.svg";
+import {ReactComponent as Timer} from "../../img/svg/timer.svg"
+import {ReactComponent as People} from "../../img/svg/people.svg";
+import {ReactComponent as Awesome} from "../../img/svg/awesome.svg";
+import home1 from '../../img/png/home1.png';
+import food from '../../img/png/food.png';
+import car1 from '../../img/png/car1.png';
 import {Link} from "react-router-dom";
 
 
@@ -77,48 +77,49 @@ function Home() {
             <div className='mobile-line'>
                 <hr/>
             </div>
-            <div className='advantages-text'>უპირატესობები</div>
+            <div className='advantages-text'><h1>უპირატესობები</h1></div>
 
             <div className='advantages-container'>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <PersonC/>
+                        <div className="advantages-body-svg"><PersonC/></div>
                         <p>მომხმარებლის კმაყოფილების 96%-იანი დონე</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <Star/>
+                        <div className="advantages-body-svg"><Star/></div>
                         <p>მაღალრეიტინგული გადამზღვევი კომპანიები</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <Touch/>
+                        <div className="advantages-body-svg"><Touch/></div>
                         <p>თანამედროვე ელექტრონული სერვისები</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <img src={timer} alt="timer"/>
+                        <div className="advantages-body-svg"><Timer/></div>
+
                         <p>ზარალის დარეგულირების უმოკლესი ვადები</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <People/>
+                        <div className="advantages-body-svg"><People/></div>
                         <p>კორპორატიული კლიენტების ფართო სპექტრი</p>
                     </div>
                 </div>
 
                 <div className="advantages-card">
                     <div className="advantages-body">
-                        <img src={awesome} alt="awesome"/>
+                        <div className="advantages-body-svg"><Awesome/></div>
                         <p>გუნდის პროფესიონალიზმი და მრავალწლიანი გამოცდილება</p>
                     </div>
                 </div>
@@ -128,31 +129,31 @@ function Home() {
                 <hr/>
             </div>
 
-            <div className='news-text'>სიახლეები</div>
+            <div className='news-text'><h1>სიახლეები</h1></div>
 
             <div className='news-container'>
 
                 <div className="news-card">
                     <div className="news-body">
                         <img src={home1} alt="home1"/>
-                        <div className='lg-text'>ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი</div>
-                        <div className='sm-text'>6 ნოემბერი</div>
+                        <div className='lg-text'><p>ქალაქგარეთ ცხოვრების 10 გავრცელებული მითი</p></div>
+                        <div className='sm-text'><p>6 ნოემბერი</p></div>
                     </div>
                 </div>
 
                 <div className="news-card">
                     <div className="news-body">
                         <img src={food} alt="food"/>
-                        <div className='lg-text'>ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან</div>
-                        <div className='sm-text'>28 ოქტომბერი</div>
+                        <div className='lg-text'><p>ჯანსაღი კვების საიდუმლო სამხრეთ აზიიდან</p></div>
+                        <div className='sm-text'><p>28 ოქტომბერი</p></div>
                     </div>
                 </div>
 
                 <div className="news-card">
                     <div className="news-body">
                         <img src={car1} alt="car1"/>
-                        <div className='lg-text'>ავტომობილის სალონის მოვლის თანამედროვე ხერხები</div>
-                        <div className='sm-text'>14 ოქტომბერი</div>
+                        <div className='lg-text'><p>ავტომობილის სალონის მოვლის თანამედროვე ხერხები</p></div>
+                        <div className='sm-text'><p>14 ოქტომბერი</p></div>
                     </div>
                 </div>
 

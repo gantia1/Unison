@@ -8,6 +8,8 @@ import News from "./components/pages/news/News";
 import NewsDetail from "./components/pages/news/NewsDetail";
 import Partners from "./components/pages/partners/Partners";
 import Career from "./components/pages/career/Career";
+import Travel from "./components/pages/travel-insurance/Travel";
+import TravelDetails from "./components/pages/travel-insurance/TravelDetails";
 
 
 function App() {
@@ -39,6 +41,12 @@ function App() {
                     />
                     <Route path='/career'
                            element={<Career/>}
+                    />
+                    <Route path='/travel'
+                           element={<Travel/>}
+                    />
+                    <Route path='/travel/travel-detail'
+                           element={<TravelDetails/>}
                     />
                 </Route>
 

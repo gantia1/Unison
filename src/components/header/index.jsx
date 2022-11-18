@@ -1,9 +1,9 @@
-import {ReactComponent as Georgian} from "../../img/ka.svg";
-import en from '../../img/en.png';
-import ru from '../../img/ru.png';
-import arrow from '../../img/arrow.svg';
-import {ReactComponent as Phone} from "../../img/phone.svg";
-import {ReactComponent as Agent} from "../../img/agent.svg";
+import {ReactComponent as Georgian} from "../../img/svg/ka.svg";
+import en from '../../img/png/en.png';
+import ru from '../../img/png/ru.png';
+import arrow from '../../img/svg/arrow.svg';
+import {ReactComponent as Phone} from "../../img/svg/phone.svg";
+import {ReactComponent as Agent} from "../../img/svg/agent.svg";
 import {Link} from "react-router-dom";
 
 function Index() {

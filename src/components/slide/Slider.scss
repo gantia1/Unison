@@ -22,12 +22,12 @@
 }
 
 .carousel-control-prev-icon {
-  background-image: url("./../../img/Left.svg") !important;
+  background-image: url("./../../img/svg/Left.svg") !important;
   @extend %img-size;
 }
 
 .carousel-control-next-icon {
-  background-image: url("./../../img/Right.svg") !important;
+  background-image: url("./../../img/svg/Right.svg") !important;
   @extend %img-size;
 }
 

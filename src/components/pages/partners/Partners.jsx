@@ -1,22 +1,22 @@
 import React, {useState} from "react";
 import '../../../styles/partners.scss';
-import {ReactComponent as Shopping} from "../../../img/shipping.svg";
-import {ReactComponent as Public} from "../../../img/public.svg";
-import {ReactComponent as Store} from "../../../img/store.svg";
-import newsCardImg1 from "../../../img/home1.png";
-import newsCardImg2 from "../../../img/food.png";
-import newsCardImg3 from "../../../img/car1.png";
-import newsCardImg4 from "../../../img/newsCardImg4.png";
-import newsCardImg5 from "../../../img/newsCardImg5.png";
-import newsCardImg6 from "../../../img/newsCardImg6.png";
-import newsCardImg7 from "../../../img/newsCardImg7.png";
+import {ReactComponent as Shopping} from "../../../img/svg/shipping.svg";
+import {ReactComponent as Public} from "../../../img/svg/public.svg";
+import {ReactComponent as Store} from "../../../img/svg/store.svg";
+import newsCardImg1 from "../../../img/png/home1.png";
+import newsCardImg2 from "../../../img/png/food.png";
+import newsCardImg3 from "../../../img/png/car1.png";
+import newsCardImg4 from "../../../img/png/newsCardImg4.png";
+import newsCardImg5 from "../../../img/png/newsCardImg5.png";
+import newsCardImg6 from "../../../img/png/newsCardImg6.png";
+import newsCardImg7 from "../../../img/png/newsCardImg7.png";
 import {Container, Modal} from "react-bootstrap";
-import {ReactComponent as PartnerClose} from "../../../img/partnerClose.svg";
-import {ReactComponent as PartnersImg1} from "../../../img/partnersImg1.svg";
-import {ReactComponent as PartnersImg2} from "../../../img/partnersImg2.svg";
-import {ReactComponent as PartnersImg3} from "../../../img/partnersImg3.svg";
-import {ReactComponent as PartnersImg4} from "../../../img/partnersImg4.svg";
-import {ReactComponent as PartnersImg5} from "../../../img/partnersImg5.svg";
+import {ReactComponent as PartnerClose} from "../../../img/svg/partnerClose.svg";
+import {ReactComponent as PartnersImg1} from "../../../img/svg/partnersImg1.svg";
+import {ReactComponent as PartnersImg2} from "../../../img/svg/partnersImg2.svg";
+import {ReactComponent as PartnersImg3} from "../../../img/svg/partnersImg3.svg";
+import {ReactComponent as PartnersImg4} from "../../../img/svg/partnersImg4.svg";
+import {ReactComponent as PartnersImg5} from "../../../img/svg/partnersImg5.svg";
 
 function Partners() {
     const [show, setShow] = useState(false);

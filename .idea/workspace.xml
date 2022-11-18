@@ -1,13 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="CareerDesktop-ModalForm">
+    <list default="true" id="0e579e5f-96e0-4e9f-ae3a-253f2831c217" name="Changes" comment="CareerMobile">
+      <change afterPath="$PROJECT_DIR$/src/components/pages/travel-insurance/Travel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/travel-insurance/TravelDetails.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileFooter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/MobileHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mobile/mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mobile/mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/about-us/AboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/about-us/AboutUs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/career/Career.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/career/Career.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/career/CareerModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/career/CareerModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/contact-us/ContactOffCanvas.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/contact-us/ContactOffCanvas.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/news/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/news/News.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/news/NewsDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/news/NewsDetail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/partners/Partners.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/partners/Partners.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slide/Slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slide/Slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/Left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/Right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsBg1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsBg2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsCard8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/aboutUsTop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/agent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/agent.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/annual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/appstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/arrowBack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/awesome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bottomCardBG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/buyOnline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/campaign.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/car.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/car1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/car1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/closeWhite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/component.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/contactBg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/feedback.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/flight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/flight1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/food.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/fromArrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/headerImg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/health.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/health1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/ka.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/menu-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/menu-imgB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/mission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsCardImg9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsTopBG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newsTopMobileBG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/newspaper.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/pageArrowLeft.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/pageArrowRight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnerClose.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnersHeaderBG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnersImg1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnersImg2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnersImg3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnersImg4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/partnersImg5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/people.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/person.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/person1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/person2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/phone1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/public.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/shipping.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/slide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/standart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/store.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/timer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/toggle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/toggleIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/toggleIcon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/toggleIcon1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/toggleIcon2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/touch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/uniLogo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/unisonLogo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/value.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/youtube.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/career.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/career.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/news.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/partners.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +140,9 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="25c0f074-069c-46f2-92c6-6847fa787a7d" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/components/pages/travel-insurance/TravelDetails.jsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,7 +163,8 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/lenovo/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/222.4345.14/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -118,7 +238,11 @@
       <workItem from="1668148135428" duration="18797000" />
       <workItem from="1668406824865" duration="25541000" />
       <workItem from="1668493149434" duration="25703000" />
-      <workItem from="1668579218973" duration="16746000" />
+      <workItem from="1668579218973" duration="25360000" />
+      <workItem from="1668666212400" duration="634000" />
+      <workItem from="1668666953353" duration="23982000" />
+      <workItem from="1668752554743" duration="2750000" />
+      <workItem from="1668755334040" duration="22915000" />
     </task>
     <task id="LOCAL-00001" summary="contact">
       <created>1667299868101</created>
@@ -218,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668512487822</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="CareerMobile">
+      <created>1668596975827</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668596975827</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +393,7 @@
     <MESSAGE value="folders" />
     <MESSAGE value="CareerDesktop" />
     <MESSAGE value="CareerDesktop-ModalForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="CareerDesktop-ModalForm" />
+    <MESSAGE value="CareerMobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="CareerMobile" />
   </component>
 </project>

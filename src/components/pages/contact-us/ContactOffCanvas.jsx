@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, Offcanvas} from "react-bootstrap";
 import "../../../styles/pages.scss";
-import {ReactComponent as Close} from "../../../img/close.svg";
+import {ReactComponent as Close} from "../../../img/svg/close.svg";
 
 function ContactOffCanvas(props) {
     const [validated, setValidated] = useState(false);

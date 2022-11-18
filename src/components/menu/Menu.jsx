@@ -1,10 +1,10 @@
 import {Link, useLocation} from "react-router-dom";
-import {ReactComponent as UnisonLogo} from "../../img/Logo.svg";
-import {ReactComponent as CabinetImg} from "../../img/component.svg";
-import {ReactComponent as Health} from "../../img/health.svg";
-import {ReactComponent as Car} from "../../img/car.svg";
-import {ReactComponent as Person} from "../../img/person.svg";
-import {ReactComponent as Flight} from "../../img/flight.svg";
+import {ReactComponent as UnisonLogo} from "../../img/svg/Logo.svg";
+import {ReactComponent as CabinetImg} from "../../img/svg/component.svg";
+import {ReactComponent as Health} from "../../img/svg/health.svg";
+import {ReactComponent as Car} from "../../img/svg/car.svg";
+import {ReactComponent as Person} from "../../img/svg/person.svg";
+import {ReactComponent as Flight} from "../../img/svg/flight.svg";
 
 function Menu() {
     const location = useLocation();
@@ -41,7 +41,7 @@ function Menu() {
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link to='#'>
+                                    <Link to='/travel'>
                                         <Flight/>
                                         <span>სამოგზაურო დაზღვევა</span>
                                     </Link>
